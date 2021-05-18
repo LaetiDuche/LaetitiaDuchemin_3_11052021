@@ -9,6 +9,8 @@ body{
     font-family: 'Shrikhand', cursive;
     font-family: 'Roboto', sans-serif;
 }
+
+/*Header*/
 header{
     display: flex;
 }
@@ -16,6 +18,8 @@ header{
     margin: auto;
     padding: 20px 0 15px 0;
 }
+
+/*Section localisation*/
 .localisation{
     background-color: #eaeaea;
 }
@@ -36,4 +40,36 @@ input{
 ::placeholder{
     margin: 20px O 20px 0;
     color: black;
+}
+
+/*Section Présentation*/
+.presentation{
+    background-color: #f6f6f6;
+}
+.decouverte{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0 50px 0;
+}
+h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+    padding: 0 50px 10px 50px;
+}
+p{
+    text-align: center;
+    margin: auto;
+    padding: 0 40px 30px 40px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+.explore{
+    margin: auto;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    font-size: 1rem;
 }
