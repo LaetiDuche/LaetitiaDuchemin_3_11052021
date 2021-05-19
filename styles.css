@@ -72,8 +72,8 @@ h1{
     font-weight: 100;
     font-size: 1.1rem;
 }
-.explore{
-    margin: auto;
+.btn-explore{
+    text-align: center;
     background-color: #9356DC;
     color: white;
     border-radius: 2.1rem;
@@ -81,6 +81,9 @@ h1{
     font-size: 1rem;
     border: none;
     box-shadow: 1px  2px 10px grey;
+}
+.decouverte a{
+    margin: auto;
 }
 /*Fonction*/
 .fonction{
@@ -103,13 +106,12 @@ h1{
     font-size: 1rem;
     font-weight: 700;
     margin-left: 30px;
-    
 }
 .fonction a{
     text-decoration: none;
 }
-h2{
-    padding: 50px 0px 25px 20px;
+.fonction h2{
+    padding: 50px 0px 25px 0;
 }
 .numero{
     background-color: #9356DC;
@@ -129,6 +131,7 @@ h2{
     color: black;
 }
 .fa-store{
+    font-size: 1rem;
     color: rgba(0,0,0,0.5);
 }
 .fa-store:hover{
@@ -138,15 +141,16 @@ h2{
     margin-right: 8px;
 }
 .fonction a:hover{
-    
     background-color: rgba(147, 86, 220, 0.3);
-    /* opacity: 0.3; */
 }
 
 /*Restaurants*/
 .menus{
     background-color: #f6f6f6;
     padding: 0 0 50px 0;
+}
+.menus h2{
+    padding: 50px 0px 25px 20px;
 }
 .art-resto{
     background-color: white;
@@ -175,6 +179,9 @@ figcaption{
 }
 .fig-menu{
     display: flex;
+}
+.art-resto a{
+    text-decoration: none;
 }
 /*Footer*/
 footer{
