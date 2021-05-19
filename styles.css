@@ -9,7 +9,15 @@ body{
     font-family: 'Shrikhand', cursive;
     font-family: 'Roboto', sans-serif;
 }
-
+img{
+    max-width: 100%;
+}
+h1, h2, h3, p{
+    color: black;
+}
+.fas, .far{
+    color: black;
+}
 /*Header*/
 header{
     display: flex;
@@ -76,7 +84,7 @@ h1{
 }
 /*Fonction*/
 .fonction{
-    padding: 0 20px 0 30px;
+    padding: 0 20px 50px 30px;
 }
 .carte-choix{
     background-color: #f6f6f6;
@@ -97,7 +105,7 @@ h1{
     align-items: baseline;
 }
 h2{
-    padding: 40px 0px 25px 20px;
+    padding: 50px 0px 25px 20px;
     
 }
 a{
@@ -132,4 +140,37 @@ a{
 .carte-choix:hover{
     background-color: #9356DC;
     opacity: 0.3;
+}
+
+/*Restaurants*/
+.menus{
+    background-color: #f6f6f6;
+}
+.art-resto{
+    background-color: white;
+    margin: 0 1.3rem 1.3rem 1.3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px lightgrey;
+}
+.fig-resto{
+    display: flex;
+    flex-direction: column;
+} 
+.img-resto{
+    object-fit: cover;
+    height: 11rem;
+    border-radius: 15px 15px 0 0;
+}
+figcaption{
+    padding: 1rem;
+}
+.fa-heart{
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0.4rem;
+    margin-right: 0.5rem;
+}
+.fig-palette{
+    display: flex;
 }
