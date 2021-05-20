@@ -11,8 +11,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/** img
- * max-width: 100% **/
 h1, h2, h3, p, .fas, .far {
   color: black;
 }
@@ -30,26 +28,6 @@ header #ohmyfood {
 /*Section localisation*/
 .localisation {
   background-color: #eaeaea;
-}
-.localisation form {
-  display: flex;
-  height: 3rem;
-}
-
-.recherche {
-  margin: auto;
-}
-.recherche input {
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-left: 1rem;
-  background-color: #eaeaea;
-}
-.recherche input ::placeholder {
-  margin: 20px O 20px 0;
-  color: black;
-  opacity: 0.6;
 }
 
 /*Section Présentation*/

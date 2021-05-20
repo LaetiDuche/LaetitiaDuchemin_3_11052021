@@ -8,13 +8,11 @@
 body
   font-family: 'Roboto', sans-serif
 
-/** img
-  max-width: 100% **/
-
 h1, h2, h3, p, .fas, .far
   color: black
 
 @import "Sass/Utils/variables"
+@import "Sass/Layout/form"
 
 @mixin box-shadow
   box-shadow: 2px 2px 12px lightgrey
@@ -30,22 +28,8 @@ header
 /*Section localisation*/
 .localisation
   background-color: $color-fond2
-  & form
-    display: flex
-    height: 3rem
 
-.recherche
-  margin: auto
-  & input
-    border: none
-    font-size: 1rem
-    font-weight: bold
-    padding-left: 1rem
-    background-color: $color-fond2
-    & ::placeholder
-      margin: 20px O 20px 0
-      color: black
-      opacity: 0.6
+
 
 /*Section Présentation*/
 /*decouverte*/
