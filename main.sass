@@ -1,24 +1,17 @@
-/*Mobile first*/
-  /*reset*/
 
-
-
-
-h1, h2, h3, p, .fas, .far
-  color: black
 @import "Sass/Base/reset"
 @import "Sass/Base/typography"
+
 @import "Sass/Utils/variables"
-@import "Sass/Layout/form"
 @import "Sass/Utils/mixins"
 
-/*Header*/
-header
-  display: flex
-  #ohmyfood
-    width: 10rem
-    margin: auto
-    padding: 20px 0 15px 0
+@import "Sass/Layout/header"
+@import "Sass/Layout/form"
+@import "Sass/Layout/footer"
+
+@import "Sass/Composants/button"
+
+
 
 /*Section localisation*/
 .localisation
@@ -48,15 +41,7 @@ header
   & a
     margin: auto
 
-.btn-explore
-  text-align: center
-  background-color: $color-primary
-  color: white
-  border-radius: 2.1rem
-  padding: 1rem 1.2rem
-  font-size: 1rem
-  border: none
-  @include box-shadow
+
   
 
 /*Fonction*/
@@ -69,38 +54,7 @@ header
     &:hover
       background-color: rgba(147, 86, 220, 0.3)
 
-.btn-fonction
-  background-color: $color-fond1
-  border: none
-  border-radius: 1.5rem
-  margin-bottom: 25px
-  @include box-shadow
-  display: flex  
-  padding: 1.5rem 1rem 1.5rem 0rem
-  align-items: baseline
-  width: 100%
-  text-decoration: none
-  & .numero
-    background-color: $color-primary
-    border-radius: 2rem
-    color: white
-    height: 22px
-    width: 22px
-    font-size: 0.9rem
-    font-weight: 200
-    margin-right: 20px
-    margin-left: -10px
-    padding-top: 2.5px
-  & .fa-mobile-alt
-    font-size: 1.3rem
-    opacity: 0.5
-    color: black
-    margin-right: 8px
-  & .titre-fonction
-    color: black
-    font-size: 1rem
-    font-weight: 700
-    margin-left: 30px
+
       
 .fa-list-ul
   font-size: 1.3rem
@@ -148,29 +102,6 @@ header
           
 
 /*Footer*/
-footer
-  display: flex
-  flex-direction: column
-  background-color: $color-footer
-  padding: 20px 0 40px 25px
-  & .titre-ohmy
-    font-family: 'Shrikhand'
-    color: white
-    font-style: italic
-    font-size: 1.1rem
-    font-weight: 100
-    padding-bottom: 10px
-  & .foot
-    display: flex
-    padding-top: 10px
-    align-items: baseline
-    & i
-      color: white
-      font-size: 0.8rem
-      padding-right: 10px
-    & h3
-      color: white
-      font-size: 1rem
-      font-weight: 300
+
 
  

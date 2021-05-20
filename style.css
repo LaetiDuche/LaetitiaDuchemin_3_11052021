@@ -1,18 +1,25 @@
 @charset "UTF-8";
-/*Mobile first*/
- * /*reset*/
-h1, h2, h3, p, .fas, .far {
-  color: black;
-}
-
 *, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+h1, h2, h3, p, .fas, .far {
+  color: black;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+}
+header #ohmyfood {
+  width: 10rem;
+  margin: auto;
+  padding: 20px 0 15px 0;
 }
 
 form {
@@ -35,45 +42,34 @@ form .recherche ::placeholder {
   opacity: 0.6;
 }
 
-/*Header*/
-header {
+footer {
   display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 20px 0 40px 25px;
 }
-header #ohmyfood {
-  width: 10rem;
-  margin: auto;
-  padding: 20px 0 15px 0;
-}
-
-/*Section localisation*/
-.localisation {
-  background-color: #eaeaea;
-}
-
-/*Section Présentation*/
-/*decouverte*/
-.decouverte {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 40px 0 50px 0;
-  background-color: #f6f6f6;
-}
-.decouverte h1 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: auto;
-  padding: 0 50px 10px 50px;
-}
-.decouverte .sous-titre {
-  text-align: center;
-  margin: auto;
-  padding: 0 30px 30px 30px;
-  font-weight: 100;
+footer .titre-ohmy {
+  font-family: "Shrikhand";
+  color: white;
+  font-style: italic;
   font-size: 1.1rem;
+  font-weight: 100;
+  padding-bottom: 10px;
 }
-.decouverte a {
-  margin: auto;
+footer .foot {
+  display: flex;
+  padding-top: 10px;
+  align-items: baseline;
+}
+footer .foot i {
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 10px;
+}
+footer .foot h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .btn-explore {
@@ -85,20 +81,6 @@ header #ohmyfood {
   font-size: 1rem;
   border: none;
   box-shadow: 2px 2px 12px lightgrey;
-}
-
-/*Fonction*/
-.fonction {
-  padding: 0 20px 50px 30px;
-}
-.fonction h2 {
-  padding: 50px 0px 25px 0;
-}
-.fonction a {
-  text-decoration: none;
-}
-.fonction a:hover {
-  background-color: rgba(147, 86, 220, 0.3);
 }
 
 .btn-fonction {
@@ -136,6 +118,52 @@ header #ohmyfood {
   font-size: 1rem;
   font-weight: 700;
   margin-left: 30px;
+}
+
+/*Header*/
+/*Section localisation*/
+.localisation {
+  background-color: #eaeaea;
+}
+
+/*Section Présentation*/
+/*decouverte*/
+.decouverte {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 50px 0;
+  background-color: #f6f6f6;
+}
+.decouverte h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 0 50px 10px 50px;
+}
+.decouverte .sous-titre {
+  text-align: center;
+  margin: auto;
+  padding: 0 30px 30px 30px;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.decouverte a {
+  margin: auto;
+}
+
+/*Fonction*/
+.fonction {
+  padding: 0 20px 50px 30px;
+}
+.fonction h2 {
+  padding: 50px 0px 25px 0;
+}
+.fonction a {
+  text-decoration: none;
+}
+.fonction a:hover {
+  background-color: rgba(147, 86, 220, 0.3);
 }
 
 .fa-list-ul {
@@ -195,34 +223,5 @@ header #ohmyfood {
 }
 
 /*Footer*/
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  padding: 20px 0 40px 25px;
-}
-footer .titre-ohmy {
-  font-family: "Shrikhand";
-  color: white;
-  font-style: italic;
-  font-size: 1.1rem;
-  font-weight: 100;
-  padding-bottom: 10px;
-}
-footer .foot {
-  display: flex;
-  padding-top: 10px;
-  align-items: baseline;
-}
-footer .foot i {
-  color: white;
-  font-size: 0.8rem;
-  padding-right: 10px;
-}
-footer .foot h3 {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
-}
 
 /*# sourceMappingURL=style.css.map */
