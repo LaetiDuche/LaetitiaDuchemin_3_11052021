@@ -1,18 +1,18 @@
 @charset "UTF-8";
 /*Mobile first*/
  * /*reset*/
-*, ::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, p, .fas, .far {
   color: black;
+}
+
+*, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 form {
