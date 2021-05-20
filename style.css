@@ -120,14 +120,10 @@ footer .foot h3 {
   margin-left: 30px;
 }
 
-/*Header*/
-/*Section localisation*/
 .localisation {
   background-color: #eaeaea;
 }
 
-/*Section Présentation*/
-/*decouverte*/
 .decouverte {
   display: flex;
   flex-wrap: wrap;
@@ -152,6 +148,40 @@ footer .foot h3 {
   margin: auto;
 }
 
+.fonction {
+  padding: 0 20px 50px 30px;
+}
+.fonction h2 {
+  padding: 50px 0px 25px 0;
+}
+.fonction a {
+  text-decoration: none;
+}
+.fonction a:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+
+.fa-list-ul {
+  font-size: 1.3rem;
+  opacity: 0.5;
+  color: black;
+}
+
+.fa-store {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.fa-store:hover {
+  color: #9356DC;
+}
+
+/*Section localisation*/
+.localisation {
+  background-color: #eaeaea;
+}
+
+/*Section Présentation*/
+/*decouverte*/
 /*Fonction*/
 .fonction {
   padding: 0 20px 50px 30px;
