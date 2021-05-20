@@ -1,0 +1,19 @@
+{
+  "name": "laetitiaduchemin_3_11052021",
+  "version": "1.0.0",
+  "description": "Dynamiser une page web avec des animations css.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaetiDuche/LaetitiaDuchemin_3_11052021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaetiDuche/LaetitiaDuchemin_3_11052021/issues"
+  },
+  "homepage": "https://github.com/LaetiDuche/LaetitiaDuchemin_3_11052021#readme"
+}
