@@ -4,11 +4,12 @@
   "description": "Dynamiser une page web avec des animations css.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./main.sass:./style.css"
+    
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LaetiDuche/LaetitiaDuchemin_3_11052021.git"
+    "url": "/Users/Laeti/Documents/OPENCLASSROOMS/PROJETS/PROJET3/LaetitiaDuchemin_3_11052021"
   },
   "author": "",
   "license": "ISC",

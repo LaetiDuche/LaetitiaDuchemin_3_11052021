@@ -1,20 +1,23 @@
 /*Mobile first*/
+  /*reset*/
+*, ::after 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
 body
-    font-family: 'Roboto', sans-serif
+  font-family: 'Roboto', sans-serif
 
 img
-    max-width: 100%
+  max-width: 100%
 
 h1, h2, h3, p, .fas, .far
-    color: black
+  color: black
 
 @import "Utils/variables"
 
-
 @mixin box-shadow
   box-shadow: 2px 2px 12px lightgrey
-
-
 
 /*Header*/
 header
@@ -108,16 +111,16 @@ header
     margin-right: 20px
     margin-left: -10px
     padding-top: 2.5px
-    & .fa-mobile-alt
-      font-size: 1.3rem
-      opacity: 0.5
-      color: black
-      margin-right: 8px
-    & .titre-fonction
-      color: black
-      font-size: 1rem
-      font-weight: 700
-      margin-left: 30px
+  & .fa-mobile-alt
+    font-size: 1.3rem
+    opacity: 0.5
+    color: black
+    margin-right: 8px
+  & .titre-fonction
+    color: black
+    font-size: 1rem
+    font-weight: 700
+    margin-left: 30px
       
 .fa-list-ul
   font-size: 1.3rem
@@ -155,13 +158,13 @@ header
 
 .caption-resto
   padding: 1rem
-  & .fig-menu
-    display: flex
-    & .fa-heart
-      margin-left: auto
-      font-size: 1.5rem
-      font-weight: 100
-      margin: 0.2rem 0.5rem 0 0
+
+.fig-menu
+  display: flex
+  & .fa-heart
+    font-size: 1.5rem
+    font-weight: 100
+    margin: 0.3rem 0.5rem 0 auto
           
 
 /*Footer*/
