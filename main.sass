@@ -11,6 +11,13 @@ h1, h2, h3, p
 .fas, .far
     color: black
 
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-fond1:#f6f6f6;
+$color-fond2:#eaeaea;
+$color-footer:#353535
+
 /*Header*/
 header
   display: flex
@@ -18,26 +25,25 @@ header
       margin: auto
       padding: 20px 0 15px 0
 
-
 /*Section localisation*/
 .localisation
-  background-color: #eaeaea
+  background-color: $color-fond2
     form
       display: flex
       height: 3rem
-        .recherche
-          margin: auto
-            input
-              border: none
-              font-size: 1rem
-              font-weight: bold
-              padding-left: 1rem
-              background-color: #eaeaea
-                ::placeholder
-                  margin: 20px O 20px 0
-                  color: black
-                  opacity: 0.6
 
+.recherche
+  margin: auto
+    input
+      border: none
+      font-size: 1rem
+      font-weight: bold
+      padding-left: 1rem
+      background-color: $color-fond2
+        ::placeholder
+          margin: 20px O 20px 0
+          color: black
+          opacity: 0.6
 
 /*Section Présentation*/
 /*decouverte*/
@@ -45,7 +51,7 @@ header
   display: flex
   flex-wrap: wrap
   padding: 40px 0 50px 0
-  background-color: #f6f6f6
+  background-color: $color-fond1
     h1
       font-weight: 700
       font-size: 1.5rem
@@ -60,18 +66,16 @@ header
       font-size: 1.1rem
     a
       margin: auto
-        .btn-explore
-          text-align: center
-          background-color: #9356DC
-          color: white
-          border-radius: 2.1rem
-          padding: 1rem 1.2rem
-          font-size: 1rem
-          border: none
-          box-shadow: 1px  2px 10px grey
 
-/** .decouverte a
-    margin: auto **/
+.btn-explore
+  text-align: center
+  background-color: $color-primary
+  color: white
+  border-radius: 2.1rem
+  padding: 1rem 1.2rem
+  font-size: 1rem
+  border: none
+  box-shadow: 1px  2px 10px grey
 
 /*Fonction*/
 .fonction
@@ -80,42 +84,42 @@ header
       padding: 50px 0px 25px 0
     a
       text-decoration: none
-        button
-          background-color: #f6f6f6
-          border: none
-          border-radius: 1.5rem
-          margin-bottom: 25px
-          box-shadow: 2px 2px 12px lightgrey
-          display: flex  
-          padding: 1.5rem 1rem 1.5rem 0rem
-          align-items: baseline
-          width: 100%
-          text-decoration: none
-            .numero
-              background-color: #9356DC
-              border-radius: 2rem
-              color: white
-              height: 22px
-              width: 22px
-              font-size: 0.9rem
-              font-weight: 200
-              margin-right: 20px
-              margin-left: -10px
-              padding-top: 2.5px
-            .fa-mobile-alt
-              font-size: 1.3rem
-              opacity: 0.5
-              color: black
-              margin-right: 8px
-            .titre-fonction
-              color: black
-              font-size: 1rem
-              font-weight: 700
-              margin-left: 30px
-    a:hover
-      background-color: rgba(147, 86, 220, 0.3)
+      &:hover
+        background-color: rgba(147, 86, 220, 0.3)
 
-
+.btn-fonction
+  background-color: $color-fond1
+  border: none
+  border-radius: 1.5rem
+  margin-bottom: 25px
+  box-shadow: 2px 2px 12px lightgrey
+  display: flex  
+  padding: 1.5rem 1rem 1.5rem 0rem
+  align-items: baseline
+  width: 100%
+  text-decoration: none
+    .numero
+      background-color: $color-primary
+      border-radius: 2rem
+      color: white
+      height: 22px
+      width: 22px
+      font-size: 0.9rem
+      font-weight: 200
+      margin-right: 20px
+      margin-left: -10px
+      padding-top: 2.5px
+        .fa-mobile-alt
+          font-size: 1.3rem
+          opacity: 0.5
+          color: black
+          margin-right: 8px
+        .titre-fonction
+          color: black
+          font-size: 1rem
+          font-weight: 700
+          margin-left: 30px
+      
 .fa-list-ul
     font-size: 1.3rem
     opacity: 0.5
@@ -124,12 +128,12 @@ header
 .fa-store
   font-size: 1rem
   color: rgba(0,0,0,0.5)
-    :hover
-      color: #9356DC
+  &:hover
+    color: $color-primary
 
 /*Restaurants*/
 .menus
-  background-color: #f6f6f6
+  background-color: $color-fond1
   padding: 0 0 50px 0
     h2
       padding: 50px 0px 25px 20px
@@ -141,29 +145,31 @@ header
   box-shadow: 2px 2px 12px lightgrey
     a
       text-decoration: none
-        .fig-resto
-          display: flex
-          flex-direction: column
-            .img-resto
-              object-fit: cover
-              height: 11rem
-              border-radius: 15px 15px 0 0
-            figcaption
-              padding: 1rem
-                .fig-menu
-                  display: flex
-                    .fa-heart
-                      margin-left: auto
-                      font-size: 1.5rem
-                      font-weight: 100
-                      margin-top: 0.2rem
-                      margin-right: 0.5rem
+
+.fig-resto
+  display: flex
+  flex-direction: column
+    .img-resto
+      object-fit: cover
+      height: 11rem
+      border-radius: 15px 15px 0 0
+
+.caption-resto
+  padding: 1rem
+    .fig-menu
+      display: flex
+        .fa-heart
+          margin-left: auto
+          font-size: 1.5rem
+          font-weight: 100
+          margin-top: 0.2rem
+          margin-right: 0.5rem
 
 /*Footer*/
 footer
   display: flex
   flex-direction: column
-  background-color: #353535
+  background-color: $color-footer
   padding: 20px 0 40px 25px
     .titre-ohmy
       font-family: 'Shrikhand'

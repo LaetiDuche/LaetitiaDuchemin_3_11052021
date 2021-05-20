@@ -89,7 +89,7 @@ h1{
 .fonction{
     padding: 0 20px 50px 30px;
 }
-.fonction button{
+.btn-fonction{
     background-color: #f6f6f6;
     border: none;
     border-radius: 1.5rem;
@@ -167,7 +167,7 @@ h1{
     height: 11rem;
     border-radius: 15px 15px 0 0;
 }
-figcaption{
+.caption-resto{
     padding: 1rem;
 }
 .fa-heart{
