@@ -79,7 +79,7 @@ footer .foot h3 {
   padding: 1rem 1.2rem;
   font-size: 1rem;
   border: none;
-  box-shadow: 2px 2px 12px lightgrey;
+  box-shadow: 0px 7px 7px 0px rgba(51, 47, 23, 0.15);
 }
 
 .btn-fonction {
@@ -162,6 +162,7 @@ footer .foot h3 {
 
 .localisation {
   background-color: #eaeaea;
+  box-shadow: inset 0px 4px 4px -3px rgba(53, 53, 53, 0.29);
 }
 
 .decouverte {
