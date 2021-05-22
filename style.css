@@ -145,6 +145,10 @@ footer .foot h3 {
   object-fit: cover;
   height: 11rem;
   border-radius: 15px 15px 0 0;
+  object-position: bottom;
+}
+.fig-resto .img-note {
+  object-position: center -140px;
 }
 
 .caption-resto {
