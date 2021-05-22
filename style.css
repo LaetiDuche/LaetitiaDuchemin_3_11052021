@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Css general*/
 *, ::after {
   margin: 0;
   padding: 0;
@@ -12,6 +14,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*header*/
 header {
   display: flex;
 }
@@ -21,6 +24,7 @@ header #ohmyfood {
   padding: 20px 0 15px 0;
 }
 
+/*Section Localisation*/
 form {
   display: flex;
   height: 3rem;
@@ -41,36 +45,66 @@ form .recherche ::placeholder {
   opacity: 0.6;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  background-color: #353535;
-  padding: 20px 0 40px 25px;
-}
-footer .titre-ohmy {
-  font-family: "Shrikhand";
-  color: white;
-  font-style: italic;
-  font-size: 1.1rem;
-  font-weight: 100;
-  padding-bottom: 10px;
-}
-footer .foot {
-  display: flex;
-  padding-top: 10px;
-  align-items: baseline;
-}
-footer .foot i {
-  color: white;
-  font-size: 0.8rem;
-  padding-right: 10px;
-}
-footer .foot h3 {
-  color: white;
-  font-size: 1rem;
-  font-weight: 300;
+.localisation {
+  background-color: #eaeaea;
+  box-shadow: inset 0px 4px 4px -3px rgba(53, 53, 53, 0.29);
 }
 
+/*Section présentation*/
+/*div découverte*/
+.decouverte {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0 50px 0;
+  background-color: #f6f6f6;
+}
+.decouverte h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: auto;
+  padding: 0 50px 10px 50px;
+}
+.decouverte .sous-titre {
+  text-align: center;
+  margin: auto;
+  padding: 0 30px 30px 30px;
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+.decouverte a {
+  margin: auto;
+}
+
+/*div fonction*/
+.fonction {
+  padding: 0 20px 50px 30px;
+}
+.fonction h2 {
+  padding: 50px 0px 25px 0;
+}
+.fonction a {
+  text-decoration: none;
+}
+.fonction a:hover {
+  background-color: rgba(147, 86, 220, 0.3);
+}
+
+.fa-list-ul {
+  font-size: 1.3rem;
+  opacity: 0.5;
+  color: black;
+}
+
+.fa-store {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.fa-store:hover {
+  color: #9356DC;
+}
+
+/*les boutons*/
 .btn-explore {
   text-align: center;
   font-size: 1rem;
@@ -128,6 +162,7 @@ footer .foot h3 {
   margin: auto;
 }
 
+/*Section restaurants*/
 .menus {
   background-color: #f6f6f6;
   padding: 0 0 50px 0;
@@ -179,6 +214,7 @@ footer .foot h3 {
   font-weight: bold;
 }
 
+/*étiquette nouveau*/
 .new {
   padding: 0.4rem 0.7rem;
   background-color: #99E2D0;
@@ -191,60 +227,35 @@ footer .foot h3 {
   border-radius: 0.15rem;
 }
 
-.localisation {
-  background-color: #eaeaea;
-  box-shadow: inset 0px 4px 4px -3px rgba(53, 53, 53, 0.29);
-}
-
-.decouverte {
+/*Footer*/
+footer {
   display: flex;
-  flex-wrap: wrap;
-  padding: 40px 0 50px 0;
-  background-color: #f6f6f6;
+  flex-direction: column;
+  background-color: #353535;
+  padding: 20px 0 40px 25px;
 }
-.decouverte h1 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: auto;
-  padding: 0 50px 10px 50px;
-}
-.decouverte .sous-titre {
-  text-align: center;
-  margin: auto;
-  padding: 0 30px 30px 30px;
-  font-weight: 100;
+footer .titre-ohmy {
+  font-family: "Shrikhand";
+  color: white;
+  font-style: italic;
   font-size: 1.1rem;
+  font-weight: 100;
+  padding-bottom: 10px;
 }
-.decouverte a {
-  margin: auto;
+footer .foot {
+  display: flex;
+  padding-top: 10px;
+  align-items: baseline;
 }
-
-.fonction {
-  padding: 0 20px 50px 30px;
+footer .foot i {
+  color: white;
+  font-size: 0.8rem;
+  padding-right: 10px;
 }
-.fonction h2 {
-  padding: 50px 0px 25px 0;
-}
-.fonction a {
-  text-decoration: none;
-}
-.fonction a:hover {
-  background-color: rgba(147, 86, 220, 0.3);
-}
-
-.fa-list-ul {
-  font-size: 1.3rem;
-  opacity: 0.5;
-  color: black;
-}
-
-.fa-store {
+footer .foot h3 {
+  color: white;
   font-size: 1rem;
-  color: rgba(0, 0, 0, 0.5);
-}
-.fa-store:hover {
-  color: #9356DC;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
