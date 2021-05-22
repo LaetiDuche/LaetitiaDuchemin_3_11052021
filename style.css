@@ -94,6 +94,15 @@ footer .foot h3 {
   width: 100%;
   text-decoration: none;
 }
+.btn-fonction:hover {
+  background-color: #f3e9ff;
+}
+.btn-fonction:hover .fa-store, .btn-fonction:hover .fa-mobile-alt, .btn-fonction:hover .fa-list-ul {
+  color: #9356DC;
+}
+.btn-fonction:hover .fa-mobile-alt, .btn-fonction:hover .fa-list-ul {
+  opacity: 1;
+}
 .btn-fonction .numero {
   background-color: #9356DC;
   border-radius: 2rem;
