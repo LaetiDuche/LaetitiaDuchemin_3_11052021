@@ -73,12 +73,12 @@ footer .foot h3 {
 
 .btn-explore {
   text-align: center;
-  background-color: #9356DC;
+  font-size: 1rem;
   color: white;
   border-radius: 2.1rem;
   padding: 1rem 1.2rem;
-  font-size: 1rem;
   border: none;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 7px 7px 0px rgba(51, 47, 23, 0.15);
 }
 
