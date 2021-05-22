@@ -149,6 +149,7 @@ footer .foot h3 {
 .fig-resto {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .fig-resto .img-resto {
   object-fit: cover;
@@ -171,6 +172,23 @@ footer .foot h3 {
   font-size: 1.5rem;
   font-weight: 100;
   margin: 0.3rem 0.5rem 0 auto;
+  transition-duration: 1s;
+}
+.fig-menu .fa-heart:hover {
+  background: gradient-color;
+  font-weight: bold;
+}
+
+.new {
+  padding: 0.4rem 0.7rem;
+  background-color: #99E2D0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #128667;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  border-radius: 0.15rem;
 }
 
 .localisation {
