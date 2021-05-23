@@ -257,6 +257,8 @@ footer {
   flex-direction: column;
   background-color: #353535;
   padding: 20px 0 40px 25px;
+  position: relative;
+  top: 10.7rem;
 }
 footer .titre-ohmy {
   font-family: "Shrikhand";
@@ -283,17 +285,21 @@ footer .foot h3 {
 }
 
 /*Menu palette*/
+section {
+  position: relative;
+}
+
 .img-carte {
   display: flex;
   width: 100%;
   object-fit: center;
+  position: absolute;
 }
 
 .titre-resto {
   display: flex;
   align-items: baseline;
-  margin-bottom: 2rem;
-  margin-left: 0.3rem;
+  margin: 0 0 1.7rem 0.3rem;
 }
 .titre-resto .fa-heart {
   font-size: 1.5rem;
@@ -303,18 +309,21 @@ footer .foot h3 {
 
 .menu {
   padding: 30px 15px;
-  border-radius: 3rem 3rem 0 0;
+  border-radius: 2.2rem 2.2rem 0 0;
   background-color: #f6f6f6;
+  position: relative;
+  top: 10.7rem;
+  z-index: 1;
 }
 
 /*titres*/
-titre-carte, .titre-menu {
+titre-carte, .title-menu {
   font-size: 1rem;
   font-weight: 500;
   border-bottom: 3px solid #99E2D0;
   width: 2.5rem;
   padding-bottom: 0.3rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.8rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

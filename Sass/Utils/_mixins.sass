@@ -4,16 +4,26 @@
 @mixin gradient-color
   background: linear-gradient(to top ,$color-primary, $color-secondary)
 
+@mixin btn-gradient
+  text-align: center
+  font-size: 1rem
+  color: white
+  border-radius: 2.1rem
+  padding: 1rem 1.2rem
+  border: none
+  @include gradient-color
+  box-shadow: 0px 7px 7px 0px rgba(51, 47, 23, 0.15)
+
 @mixin icon-coeur
   font-size: 1.5rem
   font-weight: 100
   margin: 0.3rem 0.5rem 0 auto
 
-@mixin figcaption
+@mixin figcaption-menu
   padding: 30px 15px
-  border-radius: 3rem 3rem 0 0
+  border-radius: 2.2rem 2.2rem 0 0
   background-color: $color-fond1
-
+  
 @mixin image-carte 
   display: flex
   width: 100%
@@ -22,7 +32,17 @@
 @mixin titre-resto
     display: flex
     align-items: baseline
-    margin-bottom: 2rem
-    margin-left: 0.3rem
+    margin: 0 0 1.7rem 0.3rem
     & .fa-heart
       @include icon-coeur
+
+@mixin btn-menu
+  background-color: white
+  border: none
+  border-radius: 1rem
+  margin-bottom: 15px
+  @include box-shadow 
+  padding: 0.5rem
+  width: 100%
+  text-decoration: none
+  

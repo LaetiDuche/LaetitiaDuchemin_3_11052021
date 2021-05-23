@@ -1,11 +1,21 @@
 /*Menu palette*/
+section
+  position: relative
+
 .img-carte
   @include image-carte
+  position: absolute
+  
 
 .titre-resto
   @include titre-resto
 
 .menu
-  @include figcaption
+  @include figcaption-menu
+  position: relative
+  top: 10.7rem
+  z-index: 1
+  
+ 
 
 
