@@ -9,3 +9,20 @@
   font-weight: 100
   margin: 0.3rem 0.5rem 0 auto
 
+@mixin figcaption
+  padding: 30px 15px
+  border-radius: 3rem 3rem 0 0
+  background-color: $color-fond1
+
+@mixin image-carte 
+  display: flex
+  width: 100%
+  object-fit: center
+
+@mixin titre-resto
+    display: flex
+    align-items: baseline
+    margin-bottom: 2rem
+    margin-left: 0.3rem
+    & .fa-heart
+      @include icon-coeur
