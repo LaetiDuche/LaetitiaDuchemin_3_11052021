@@ -14,7 +14,7 @@ h1, h2, h3, p, .fas, .far {
 }
 
 /*typo pages menu*/
-.entree-palette h2 {
+.titre-resto h2 {
   font-family: "Shrikhand";
   font-size: 1.7rem;
   font-weight: 100;
@@ -175,6 +175,17 @@ form .recherche ::placeholder {
   margin: auto;
 }
 
+.btn {
+  background-color: white;
+  border: none;
+  border-radius: 1rem;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 12px lightgrey;
+  padding: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+}
+
 /*Section restaurants*/
 .menus {
   background-color: #f6f6f6;
@@ -272,28 +283,38 @@ footer .foot h3 {
 }
 
 /*Menu palette*/
-.img-palette {
+.img-carte {
   display: flex;
   width: 100%;
   object-fit: center;
 }
 
-.entree-palette {
+.titre-resto {
   display: flex;
   align-items: baseline;
+  margin-bottom: 2rem;
+  margin-left: 0.3rem;
 }
-.entree-palette .fa-heart {
+.titre-resto .fa-heart {
   font-size: 1.5rem;
   font-weight: 100;
   margin: 0.3rem 0.5rem 0 auto;
 }
 
-titre-figcarte, divh3 {
+.menu {
+  padding: 30px 15px;
+  border-radius: 3rem 3rem 0 0;
+  background-color: #f6f6f6;
+}
+
+/*titres*/
+titre-carte, .titre-menu {
   font-size: 1rem;
   font-weight: 500;
   border-bottom: 3px solid #99E2D0;
   width: 2.5rem;
   padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
