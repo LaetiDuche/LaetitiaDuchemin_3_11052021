@@ -263,4 +263,11 @@ footer .foot h3 {
   font-weight: 300;
 }
 
+/*Menu palette*/
+.img-palette {
+  display: flex;
+  width: 100%;
+  object-fit: center;
+}
+
 /*# sourceMappingURL=style.css.map */
