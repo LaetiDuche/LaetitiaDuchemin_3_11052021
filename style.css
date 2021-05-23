@@ -16,11 +16,17 @@ h1, h2, h3, p, .fas, .far {
 /*Header*/
 header {
   display: flex;
+  align-items: baseline;
 }
 header #ohmyfood {
   width: 10rem;
   margin: auto;
   padding: 20px 0 15px 0;
+}
+
+.fa-arrow-left {
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: 1.2rem;
 }
 
 /*Section localisation*/
