@@ -1,20 +1,19 @@
 @charset "UTF-8";
-/*Css general*/
 *, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h1, h2, h3, p, .fas, .far {
-  color: black;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/*header*/
+h1, h2, h3, p, .fas, .far {
+  color: black;
+}
+
+/*Header*/
 header {
   display: flex;
 }
@@ -24,7 +23,7 @@ header #ohmyfood {
   padding: 20px 0 15px 0;
 }
 
-/*Section Localisation*/
+/*Section localisation*/
 form {
   display: flex;
   height: 3rem;
@@ -51,7 +50,7 @@ form .recherche ::placeholder {
 }
 
 /*Section présentation*/
-/*div découverte*/
+/*découverte*/
 .decouverte {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +75,7 @@ form .recherche ::placeholder {
   margin: auto;
 }
 
-/*div fonction*/
+/*fonctionnement*/
 .fonction {
   padding: 0 20px 50px 30px;
 }
@@ -104,7 +103,7 @@ form .recherche ::placeholder {
   color: #9356DC;
 }
 
-/*les boutons*/
+/*Les boutons Accueil*/
 .btn-explore {
   text-align: center;
   font-size: 1rem;
