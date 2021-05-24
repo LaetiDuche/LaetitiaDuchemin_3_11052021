@@ -150,6 +150,10 @@ form .recherche ::placeholder {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 7px 7px 0px rgba(51, 47, 23, 0.15);
 }
+.btn-explore:hover {
+  opacity: 0.9;
+  box-shadow: 0px 7px 7px 0px rgba(53, 48, 24, 0.37);
+}
 
 .btn-fonction {
   background-color: #f6f6f6;
@@ -283,6 +287,9 @@ form .recherche ::placeholder {
 
 .fig-menu {
   display: flex;
+  margin: 0 0 0 auto;
+  border: none;
+  background-color: transparent;
 }
 .fig-menu .fa-heart {
   font-size: 1.5rem;
@@ -383,9 +390,9 @@ footer .foot h3 {
   margin-top: -9rem;
 }
 
-.entree {
-  transition-delay: 1s;
-  transition-property: margin-bottom;
+.menu a {
+  margin-left: auto;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
