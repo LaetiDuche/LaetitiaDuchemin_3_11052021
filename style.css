@@ -383,4 +383,9 @@ footer .foot h3 {
   margin-top: -9rem;
 }
 
+.entree {
+  transition-delay: 1s;
+  transition-property: margin-bottom;
+}
+
 /*# sourceMappingURL=style.css.map */
