@@ -317,7 +317,7 @@ footer .foot h3 {
   font-weight: 300;
 }
 
-/*Menu palette*/
+/*Menus*/
 .img-carte {
   display: flex;
   width: 100%;
@@ -345,8 +345,7 @@ footer .foot h3 {
   z-index: 1;
 }
 
-/*titres*/
-titre-carte, .menu-title {
+.menu-title {
   font-size: 1rem;
   font-weight: 500;
   border-bottom: 3px solid #99E2D0;
