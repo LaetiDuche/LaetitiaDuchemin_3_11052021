@@ -139,30 +139,35 @@ form .recherche ::placeholder {
   color: #9356DC;
 }
 
+/*Breakpoint tablet*/
 @media screen and (min-width: 600px) and (max-width: 768px) {
+  .decouverte div {
+    margin: auto;
+  }
+
   .bloc-btn {
     display: flex;
   }
   .bloc-btn .btn-2 {
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-  }
-
-  .btn-fonction {
-    padding-bottom: 0px;
+    margin-right: 1.7rem;
+    margin-left: 1.7rem;
   }
 
   .art-bloc {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 
   .art-resto {
-    flex-grow: 4;
-    flex-shrink: 1;
-    flex-basis: 10px;
+    margin: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 150px;
+  }
+  .art-resto .img-note {
+    object-position: bottom;
   }
 
   .foot-ohmy {
@@ -174,7 +179,8 @@ form .recherche ::placeholder {
     justify-content: center;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+/*Breakpoint Desktop*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .decouverte {
     padding-bottom: 20px;
   }
@@ -191,6 +197,91 @@ form .recherche ::placeholder {
 
   .btn-explore {
     margin: auto;
+  }
+
+  .bloc-btn {
+    display: flex;
+  }
+  .bloc-btn .btn-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .bloc-btn a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .art-bloc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .art-resto {
+    flex-direction: row;
+    width: 45.9%;
+  }
+
+  .foot-ohmy {
+    display: flex;
+  }
+  .foot-ohmy .foot {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .decouverte {
+    padding-bottom: 20px;
+  }
+  .decouverte div {
+    margin: auto;
+  }
+  .decouverte a {
+    margin-top: 10px;
+  }
+
+  .sous-titre {
+    padding-bottom: 10px;
+  }
+
+  .btn-explore {
+    margin: auto;
+  }
+
+  .bloc-btn {
+    display: flex;
+  }
+  .bloc-btn .btn-2 {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  .bloc-btn a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .menus {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .art-bloc {
+    display: flex;
+  }
+
+  .art-resto {
+    flex-direction: row;
+    width: 22.1%;
+  }
+
+  .foot-ohmy {
+    display: flex;
+    width: 80%;
+  }
+  .foot-ohmy .foot {
+    flex-direction: row;
+    width: 50%;
   }
 }
 /*Les boutons Accueil*/
