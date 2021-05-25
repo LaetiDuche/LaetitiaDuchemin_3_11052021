@@ -44,3 +44,45 @@
   color: rgba(0,0,0,0.5)
   &:hover
     color: $color-primary
+
+@media screen and (min-width: 600px) and (max-width:768px)
+  .bloc-btn
+    display: flex
+    & .btn-2
+      margin-right: 1.5rem
+      margin-left: 1.5rem
+  
+  .btn-fonction
+    padding-bottom: 0px
+
+  .art-bloc
+    display: flex
+    flex-wrap: wrap
+    margin-left: 1rem
+    margin-right: 1rem
+
+  .art-resto
+    flex-grow: 4
+    flex-shrink: 1
+    flex-basis: 10px
+
+  .foot-ohmy
+    display: flex
+    .foot
+      flex-direction: row
+      width: 100%
+      justify-content: center
+      
+@media screen and (min-width: 769px) and (max-width: 1440px)
+  .decouverte
+    padding-bottom: 20px
+    div 
+      margin: auto
+    a 
+      margin-top: 10px 
+  .sous-titre
+    padding-bottom: 10px
+  .btn-explore
+    margin: auto
+    
+  
