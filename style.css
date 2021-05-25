@@ -179,7 +179,7 @@ form .recherche ::placeholder {
     justify-content: center;
   }
 }
-/*Breakpoint Desktop*/
+/*Breakpoint Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .decouverte {
     padding-bottom: 20px;
@@ -230,6 +230,7 @@ form .recherche ::placeholder {
     width: 100%;
   }
 }
+/*Breakpoint Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .decouverte {
     padding-bottom: 20px;
@@ -273,6 +274,66 @@ form .recherche ::placeholder {
   .art-resto {
     flex-direction: row;
     width: 22.1%;
+  }
+
+  .foot-ohmy {
+    display: flex;
+    width: 80%;
+  }
+  .foot-ohmy .foot {
+    flex-direction: row;
+    width: 50%;
+  }
+}
+/*Breakpoint 4K 1920px*/
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .decouverte {
+    padding-bottom: 20px;
+  }
+  .decouverte div {
+    margin: auto;
+  }
+  .decouverte a {
+    margin-top: 10px;
+    margin-left: 0rem;
+  }
+
+  .sous-titre {
+    padding-bottom: 10px;
+  }
+
+  .fonction {
+    padding: 0 10rem 3rem 10rem;
+  }
+
+  .bloc-btn {
+    display: flex;
+  }
+  .bloc-btn .btn-2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+  .bloc-btn a {
+    margin: auto;
+    width: 100%;
+  }
+
+  .menus h2 {
+    margin-left: 8rem;
+  }
+
+  .art-bloc {
+    display: flex;
+    padding: 0 8rem 0 8rem;
+  }
+
+  .art-resto {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .menus {
+    padding: 0 8rem 0 8rem;
   }
 
   .foot-ohmy {

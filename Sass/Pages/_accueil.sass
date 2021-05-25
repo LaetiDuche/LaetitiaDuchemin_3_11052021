@@ -54,13 +54,11 @@
     & .btn-2
       margin-right: 1.7rem
       margin-left: 1.7rem
-
   .art-bloc
     display: flex
     flex-wrap: wrap
     margin-left: 2rem
     margin-right: 2rem
-
   .art-resto
     margin: auto
     flex-grow: 1
@@ -68,7 +66,6 @@
     flex-basis: 150px
     .img-note
       object-position: bottom
-
   .foot-ohmy
     display: flex
     .foot
@@ -76,7 +73,7 @@
       width: 100%
       justify-content: center
       
-/*Breakpoint Desktop*/
+/*Breakpoint Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px)
   .decouverte
     padding-bottom: 20px
@@ -88,7 +85,6 @@
     padding-bottom: 10px
   .btn-explore
     margin: auto
-
   .bloc-btn
     display: flex
     & .btn-2
@@ -97,23 +93,20 @@
     & a 
       margin: auto
       width: 100%
-  
   .art-bloc
     display: flex
     flex-wrap: wrap
-    margin: auto
-    
+    margin: auto  
   .art-resto
     flex-direction: row
-    width: 45.9%
-    
+    width: 45.9% 
   .foot-ohmy
     display: flex
     & .foot
       flex-direction: row
       width: 100%
-  
 
+/*Breakpoint Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px)
   .decouverte
     padding-bottom: 20px
@@ -125,7 +118,6 @@
     padding-bottom: 10px
   .btn-explore
     margin: auto
-
   .bloc-btn
     display: flex
     & .btn-2
@@ -137,19 +129,52 @@
   .menus
     padding-right: 2rem
     padding-left: 2rem
-
   .art-bloc
     display: flex
-
   .art-resto
     flex-direction: row
     width: 22.1%
-  
-
   .foot-ohmy
     display: flex
     width: 80%
     & .foot
       flex-direction: row
       width: 50%
-      
+
+/*Breakpoint 4K 1920px*/
+@media screen and (min-width: 1441px) and (max-width:1920px)
+  .decouverte
+    padding-bottom: 20px
+    & div 
+      margin: auto
+    & a 
+      margin-top: 10px
+      margin-left: 0rem
+  .sous-titre
+    padding-bottom: 10px
+  .fonction
+    padding: 0 10rem 3rem 10rem
+  .bloc-btn
+    display: flex
+    & .btn-2
+      margin-right: 5rem
+      margin-left: 5rem
+    & a 
+      margin: auto
+      width: 100%
+  .menus h2 
+    margin-left: 8rem
+  .art-bloc
+    display: flex
+    padding: 0 8rem 0 8rem
+  .art-resto
+    flex-direction: row
+    width: 100%
+  .menus
+    padding: 0 8rem 0 8rem
+  .foot-ohmy
+    display: flex
+    width: 80%
+    & .foot
+      flex-direction: row
+      width: 50%
