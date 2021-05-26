@@ -140,7 +140,7 @@ form .recherche ::placeholder {
 }
 
 /*Breakpoint tablet*/
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 660px) and (max-width: 768px) {
   .decouverte div {
     margin: auto;
   }
@@ -161,22 +161,11 @@ form .recherche ::placeholder {
   }
 
   .art-resto {
-    margin: auto;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 150px;
-  }
-  .art-resto .img-note {
-    object-position: bottom;
-  }
-
-  .foot-ohmy {
-    display: flex;
-  }
-  .foot-ohmy .foot {
     flex-direction: row;
-    width: 100%;
-    justify-content: center;
+    width: 44%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 260px;
   }
 }
 /*Breakpoint Laptop*/
@@ -220,14 +209,11 @@ form .recherche ::placeholder {
   .art-resto {
     flex-direction: row;
     width: 45.9%;
-  }
-
-  .foot-ohmy {
-    display: flex;
-  }
-  .foot-ohmy .foot {
     flex-direction: row;
-    width: 100%;
+    width: 44%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
   }
 }
 /*Breakpoint Laptop L*/  
@@ -274,28 +260,28 @@ form .recherche ::placeholder {
   .art-resto {
     flex-direction: row;
     width: 22.1%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 300px;
   }
 
-  .foot-ohmy {
-    display: flex;
-    width: 80%;
-  }
-  .foot-ohmy .foot {
-    flex-direction: row;
-    width: 50%;
+  .img-note {
+    object-position: none;
   }
 }
 /*Breakpoint 4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
   .decouverte {
-    padding-bottom: 20px;
+    margin-left: 0rem;
   }
-  .decouverte div {
+  .decouverte .decouverte {
+    padding-bottom: 2rem;
+  }
+  .decouverte .decouverte div {
     margin: auto;
   }
-  .decouverte a {
+  .decouverte .decouverte a {
     margin-top: 10px;
-    margin-left: 0rem;
   }
 
   .sous-titre {
@@ -334,15 +320,6 @@ form .recherche ::placeholder {
 
   .menus {
     padding: 0 8rem 0 8rem;
-  }
-
-  .foot-ohmy {
-    display: flex;
-    width: 80%;
-  }
-  .foot-ohmy .foot {
-    flex-direction: row;
-    width: 50%;
   }
 }
 /*Les boutons Accueil*/
@@ -481,10 +458,6 @@ form .recherche ::placeholder {
   object-fit: cover;
   height: 11rem;
   border-radius: 15px 15px 0 0;
-  object-position: bottom;
-}
-.fig-resto .img-note {
-  object-position: center -140px;
 }
 
 .caption-resto {
@@ -552,6 +525,26 @@ footer .foot h3 {
   font-weight: 300;
 }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .foot-ohmy {
+    display: flex;
+  }
+  .foot-ohmy .foot {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .foot-ohmy {
+    display: flex;
+    width: 90%;
+  }
+  .foot-ohmy .foot {
+    flex-direction: row;
+    width: 50%;
+  }
+}
 /*Menus*/
 .img-carte {
   display: flex;
