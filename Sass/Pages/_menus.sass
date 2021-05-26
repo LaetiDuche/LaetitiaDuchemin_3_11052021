@@ -7,6 +7,9 @@
 .titre-resto
   @include titre-resto
 
+.bloc-menu 
+  display: flex
+  flex-wrap: wrap
 .menu
   @include figcaption-menu
   margin-top: -2rem
@@ -27,7 +30,59 @@
   margin-left: auto
   text-decoration: none
 
+/*Tablet*/
+@media screen and (min-width: 426px) and ( max-width: 768px)
+  .img-carte
+    margin-top: -10rem
+  .menu 
+    margin-top: -5rem
+  .entree , .plat , .dessert
+    padding-right: 4rem
+    padding-left: 4rem
+  .img-note2 
+    margin-top: -20rem
+  .menu2 
+    margin-top: -13rem
+  
+      
+@media screen and (min-width: 769px) and ( max-width: 1920px)
+  .img-carte
+    margin-top: -13rem
+  .menu 
+    margin-top: -8rem
+  .bloc-menu 
+    flex-wrap: nowrap
+    padding-left: 2rem
+    padding-right: 2rem
+  .entree , .plat
+    padding-right: 2rem
+  .img-note2 
+    margin-top: -27rem
+  .menu2 
+    margin-top: -17rem
 
+@media screen and ( min-width: 1025px ) and ( max-width: 1920px)
+  .img-carte
+    margin-top: -22rem
+  .menu 
+    margin-top: -14rem
+  .img-note2 
+    margin-top: -45rem
+  .menu2 
+    margin-top: -28rem
+
+@media screen and ( min-width: 1441px) and ( max-width: 1920px)
+  .carte
+    padding-left: 10rem
+    padding-right: 10rem
+  .img-note2 
+    margin-top: -48rem
+  .menu2 
+    margin-top: -30rem
+ 
+  
+  
+  
   
   
 
