@@ -173,14 +173,14 @@ form .recherche ::placeholder {
 }
 /*Breakpoint Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .decouverte {
+  .decouverte .decouverte {
     padding-bottom: 20px;
   }
-  .decouverte div {
+  .decouverte .decouverte div {
     margin: auto;
   }
   .decouverte a {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 0px;
   }
 
@@ -222,14 +222,14 @@ form .recherche ::placeholder {
 }
 /*Breakpoint Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  .decouverte {
+  .decouverte .decouverte {
     padding-bottom: 20px;
   }
-  .decouverte div {
+  .decouverte .decouverte div {
     margin: auto;
   }
   .decouverte a {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 0px;
   }
 
@@ -276,14 +276,14 @@ form .recherche ::placeholder {
 }
 /*Breakpoint 4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-  .decouverte {
+  .decouverte .decouverte {
     padding-bottom: 20px;
   }
-  .decouverte div {
+  .decouverte .decouverte div {
     margin: auto;
   }
   .decouverte a {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 0px;
   }
 

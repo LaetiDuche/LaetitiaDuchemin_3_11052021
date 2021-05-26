@@ -72,12 +72,11 @@
 /*Breakpoint Laptop*/
 @media screen and (min-width: 769px) and (max-width: 1024px)
   .decouverte
-    padding-bottom: 20px
-    & div 
-      margin: auto
-    & a 
-      margin-top: 10px
-      margin-left: 0px 
+    @include break-decouverte
+    a 
+      margin-top: 5px
+      margin-left: 0px
+
   .sous-titre
     padding-bottom: 10px
   .btn-explore
@@ -108,12 +107,11 @@
 /*Breakpoint Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px)
   .decouverte
-    padding-bottom: 20px
-    & div 
-      margin: auto
-    & a 
-      margin-top: 10px
-      margin-left: 0px 
+    @include break-decouverte
+    a 
+      margin-top: 5px
+      margin-left: 0px
+    
   .sous-titre
     padding-bottom: 10px
   .btn-explore
@@ -144,12 +142,11 @@
 /*Breakpoint 4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width:1920px)
   .decouverte
-    padding-bottom: 20px
-    & div 
-      margin: auto
-    & a 
-      margin-top: 10px
+    @include break-decouverte
+    a 
+      margin-top: 5px
       margin-left: 0px
+
   .sous-titre
     padding-bottom: 10px
   .btn-explore
