@@ -9,6 +9,8 @@
   flex-wrap: wrap
   padding: 40px 0 50px 0
   background-color: $color-fond1
+  & div 
+    margin: auto
   & h1
     font-weight: 700
     font-size: 1.5rem
@@ -47,8 +49,9 @@
 
 /*Breakpoint tablet*/
 @media screen and (min-width: 660px) and (max-width:768px)
-  .decouverte div 
-    margin: auto
+  .decouverte 
+    & a 
+      margin: auto
   .bloc-btn
     display: flex
     & .btn-2
@@ -73,7 +76,8 @@
     & div 
       margin: auto
     & a 
-      margin-top: 10px 
+      margin-top: 10px
+      margin-left: 0px 
   .sous-titre
     padding-bottom: 10px
   .btn-explore
@@ -108,7 +112,8 @@
     & div 
       margin: auto
     & a 
-      margin-top: 10px 
+      margin-top: 10px
+      margin-left: 0px 
   .sous-titre
     padding-bottom: 10px
   .btn-explore
@@ -139,12 +144,20 @@
 /*Breakpoint 4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width:1920px)
   .decouverte
-    @include break-decouverte 
-    margin-left: 0rem
+    padding-bottom: 20px
+    & div 
+      margin: auto
+    & a 
+      margin-top: 10px
+      margin-left: 0px
   .sous-titre
     padding-bottom: 10px
+  .btn-explore
+    margin: auto
+
   .fonction
     padding: 0 10rem 3rem 10rem
+
   .bloc-btn
     display: flex
     & .btn-2

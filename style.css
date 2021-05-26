@@ -93,6 +93,9 @@ form .recherche ::placeholder {
   padding: 40px 0 50px 0;
   background-color: #f6f6f6;
 }
+.decouverte div {
+  margin: auto;
+}
 .decouverte h1 {
   font-weight: 700;
   font-size: 1.5rem;
@@ -141,7 +144,7 @@ form .recherche ::placeholder {
 
 /*Breakpoint tablet*/
 @media screen and (min-width: 660px) and (max-width: 768px) {
-  .decouverte div {
+  .decouverte a {
     margin: auto;
   }
 
@@ -178,6 +181,7 @@ form .recherche ::placeholder {
   }
   .decouverte a {
     margin-top: 10px;
+    margin-left: 0px;
   }
 
   .sous-titre {
@@ -226,6 +230,7 @@ form .recherche ::placeholder {
   }
   .decouverte a {
     margin-top: 10px;
+    margin-left: 0px;
   }
 
   .sous-titre {
@@ -272,20 +277,22 @@ form .recherche ::placeholder {
 /*Breakpoint 4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
   .decouverte {
-    margin-left: 0rem;
+    padding-bottom: 20px;
   }
-  .decouverte .decouverte {
-    padding-bottom: 2rem;
-  }
-  .decouverte .decouverte div {
+  .decouverte div {
     margin: auto;
   }
-  .decouverte .decouverte a {
+  .decouverte a {
     margin-top: 10px;
+    margin-left: 0px;
   }
 
   .sous-titre {
     padding-bottom: 10px;
+  }
+
+  .btn-explore {
+    margin: auto;
   }
 
   .fonction {
