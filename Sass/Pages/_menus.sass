@@ -10,6 +10,7 @@
 .bloc-menu 
   display: flex
   flex-wrap: wrap
+  margin: auto
 .menu
   @include figcaption-menu
   margin-top: -2rem
@@ -34,6 +35,8 @@
 @media screen and (min-width: 426px) and ( max-width: 768px)
   .img-carte
     margin-top: -10rem
+  .bloc-menu 
+    margin: auto
   .menu 
     margin-top: -5rem
   .entree , .plat , .dessert
@@ -44,7 +47,7 @@
   .menu2 
     margin-top: -13rem
   
-      
+/*Tablet*/ 
 @media screen and (min-width: 769px) and ( max-width: 1920px)
   .img-carte
     margin-top: -13rem
@@ -54,16 +57,19 @@
     flex-wrap: nowrap
     padding-left: 2rem
     padding-right: 2rem
+    margin: auto
   .entree , .plat
     padding-right: 2rem
   .img-note2 
-    margin-top: -27rem
+    margin-top: -32rem
   .menu2 
-    margin-top: -17rem
+    margin-top: -26rem
 
 @media screen and ( min-width: 1025px ) and ( max-width: 1920px)
   .img-carte
     margin-top: -22rem
+  .bloc-menu 
+    flex-basis: auto
   .menu 
     margin-top: -14rem
   .img-note2 

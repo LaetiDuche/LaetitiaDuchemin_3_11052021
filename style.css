@@ -572,6 +572,7 @@ footer .foot h3 {
 .bloc-menu {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .menu {
@@ -612,6 +613,10 @@ footer .foot h3 {
     margin-top: -10rem;
   }
 
+  .bloc-menu {
+    margin: auto;
+  }
+
   .menu {
     margin-top: -5rem;
   }
@@ -629,6 +634,7 @@ footer .foot h3 {
     margin-top: -13rem;
   }
 }
+/*Tablet*/ 
 @media screen and (min-width: 769px) and (max-width: 1920px) {
   .img-carte {
     margin-top: -13rem;
@@ -642,6 +648,7 @@ footer .foot h3 {
     flex-wrap: nowrap;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin: auto;
   }
 
   .entree, .plat {
@@ -649,16 +656,20 @@ footer .foot h3 {
   }
 
   .img-note2 {
-    margin-top: -27rem;
+    margin-top: -32rem;
   }
 
   .menu2 {
-    margin-top: -17rem;
+    margin-top: -26rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1920px) {
   .img-carte {
     margin-top: -22rem;
+  }
+
+  .bloc-menu {
+    flex-basis: auto;
   }
 
   .menu {
