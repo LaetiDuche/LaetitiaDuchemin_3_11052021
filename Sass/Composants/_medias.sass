@@ -28,12 +28,10 @@
     a 
       margin-top: 5px
       margin-left: 0px
-
   .sous-titre
     padding-bottom: 10px
   .btn-explore
     margin: auto
-
   .bloc-btn
     display: flex
     & .btn-2
@@ -61,13 +59,11 @@
     @include break-decouverte
     a 
       margin-top: 5px
-      margin-left: 0px
-    
+      margin-left: 0px    
   .sous-titre
     padding-bottom: 10px
   .btn-explore
     margin: auto
-
   .bloc-btn
     display: flex
     & .btn-2
@@ -97,15 +93,12 @@
     a 
       margin-top: 5px
       margin-left: 0px
-
   .sous-titre
     padding-bottom: 10px
   .btn-explore
     margin: auto
-
   .fonction
     padding: 0 10rem 3rem 10rem
-
   .bloc-btn
     display: flex
     & .btn-2
@@ -183,3 +176,18 @@
     margin-top: -48rem
   .menu2 
     margin-top: -30rem
+
+/*Breakpoints footer*/
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width:768px)
+  .foot-ohmy
+    display: flex
+    .foot
+      flex-direction: row
+      width: 100%
+      justify-content: center
+
+/*Laptop-4K*/
+@media screen and (min-width: 769px) 
+  .foot-ohmy
+    @include break-footer
