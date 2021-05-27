@@ -261,7 +261,7 @@ form .recherche ::placeholder {
   font-size: 1.3rem;
   opacity: 0.5;
   color: black;
-  margin-right: 8px;
+  margin-right: 1rem;
 }
 .btn-fonction .titre-fonction {
   color: black;
@@ -380,7 +380,7 @@ form .recherche ::placeholder {
 }
 
 .entree form, .plat form, .dessert form {
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 .entree form:hover, .plat form:hover, .dessert form:hover {
   opacity: 0.8;
@@ -455,8 +455,6 @@ footer .foot h3 {
   .art-bloc {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .art-resto {
@@ -465,6 +463,10 @@ footer .foot h3 {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 260px;
+  }
+
+  .fa-store, .fa-list-ul, .fa-mobile-alt {
+    margin-right: 1rem;
   }
 }
 /*Laptop*/
@@ -479,13 +481,13 @@ footer .foot h3 {
     margin-top: 5px;
     margin-left: 0px;
   }
-
-  .sous-titre {
-    padding-bottom: 10px;
+  .decouverte .sous-titre {
+    padding-bottom: 0px;
   }
 
   .btn-explore {
-    margin: auto;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
   }
 
   .bloc-btn {
@@ -528,13 +530,13 @@ footer .foot h3 {
     margin-top: 5px;
     margin-left: 0px;
   }
-
-  .sous-titre {
-    padding-bottom: 10px;
+  .decouverte .sous-titre {
+    padding-bottom: 0px;
   }
 
   .btn-explore {
-    margin: auto;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
   }
 
   .bloc-btn {
@@ -547,6 +549,11 @@ footer .foot h3 {
   .bloc-btn a {
     margin: auto;
     width: 100%;
+  }
+
+  .fonction {
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 
   .menus {
@@ -582,17 +589,17 @@ footer .foot h3 {
     margin-top: 5px;
     margin-left: 0px;
   }
-
-  .sous-titre {
-    padding-bottom: 10px;
+  .decouverte .sous-titre {
+    padding-bottom: 0px;
   }
 
   .btn-explore {
-    margin: auto;
+    margin-left: 0rem;
+    margin-top: 0.4rem;
   }
 
   .fonction {
-    padding: 0 10rem 3rem 10rem;
+    padding: 0 12rem 3rem 12rem;
   }
 
   .bloc-btn {
@@ -607,13 +614,8 @@ footer .foot h3 {
     width: 100%;
   }
 
-  .menus h2 {
-    margin-left: 8rem;
-  }
-
   .art-bloc {
     display: flex;
-    padding: 0 8rem 0 8rem;
   }
 
   .art-resto {
@@ -622,7 +624,7 @@ footer .foot h3 {
   }
 
   .menus {
-    padding: 0 8rem 0 8rem;
+    padding: 0 10rem 3rem 10rem;
   }
 }
 /*Breakpoints pages menus*/
