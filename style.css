@@ -75,7 +75,7 @@ form .recherche input {
   background-color: #eaeaea;
 }
 form .recherche ::placeholder {
-  margin: 20px O 20px 0;
+  margin: 20px 0px 20px 0px;
   color: black;
   opacity: 0.6;
 }
@@ -328,7 +328,7 @@ form .recherche ::placeholder {
 .img-carte {
   display: flex;
   width: 100%;
-  object-fit: center;
+  object-fit: cover;
   z-index: 2;
 }
 
@@ -574,7 +574,7 @@ footer .foot h3 {
   }
 
   .img-note {
-    object-position: none;
+    object-position: bottom;
   }
 }
 /*4K 1920px*/
