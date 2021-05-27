@@ -193,6 +193,9 @@ form .recherche ::placeholder {
   font-weight: bold;
   transition-duration: 1s;
 }
+.fig-menu form {
+  height: 1.5rem;
+}
 
 /*Les boutons Accueil*/
 /*Le bouton explorer*/
@@ -205,6 +208,7 @@ form .recherche ::placeholder {
   border: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 7px 7px 0px rgba(51, 47, 23, 0.15);
+  margin: auto;
 }
 .btn-explore:hover {
   opacity: 0.9;
@@ -240,10 +244,11 @@ form .recherche ::placeholder {
   height: 22px;
   width: 22px;
   font-size: 0.9rem;
-  font-weight: 200;
-  margin-right: 20px;
-  margin-left: -10px;
+  font-weight: 300;
+  margin-right: 15px;
+  margin-left: -15px;
   padding-top: 2.5px;
+  padding-left: 7px;
 }
 .btn-fonction .fa-mobile-alt {
   font-size: 1.3rem;
