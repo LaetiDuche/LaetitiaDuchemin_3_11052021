@@ -158,6 +158,9 @@ form .recherche ::placeholder {
   border-radius: 20px;
   box-shadow: 2px 2px 12px lightgrey;
 }
+.art-resto:hover {
+  box-shadow: 0px 7px 7px 0px rgba(53, 48, 24, 0.37);
+}
 .art-resto a {
   text-decoration: none;
 }
@@ -230,6 +233,9 @@ form .recherche ::placeholder {
   text-decoration: none;
 }
 .btn-fonction:hover {
+  box-shadow: 0px 7px 7px 0px rgba(53, 48, 24, 0.37);
+}
+.btn-fonction:hover {
   background-color: #f3e9ff;
 }
 .btn-fonction:hover .fa-store, .btn-fonction:hover .fa-mobile-alt, .btn-fonction:hover .fa-list-ul {
@@ -274,6 +280,12 @@ form .recherche ::placeholder {
   width: 100%;
   padding: 0.8rem 1.5rem 0.8rem 0.5rem;
   margin: auto;
+}
+.btn:hover {
+  box-shadow: 0px 7px 7px 0px rgba(53, 48, 24, 0.37);
+}
+.btn:hover {
+  opacity: 0.9;
 }
 
 /*Le bouton commander*/
@@ -369,7 +381,16 @@ form .recherche ::placeholder {
 
 .entree form, .plat form, .dessert form {
   padding-bottom: 0.5rem;
-  /** padding-top: 0.5rem **/
+}
+.entree form:hover, .plat form:hover, .dessert form:hover {
+  opacity: 0.8;
+}
+
+.btn-check {
+  display: none;
+}
+.btn-check :hover {
+  display: flex;
 }
 
 /*Etiquette nouveau*/
