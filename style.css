@@ -25,18 +25,18 @@ h1, h2, h3, p, .fas, .far {
   font-size: 1.1rem;
   font-weight: 600;
   text-align: start;
-  padding: 0 3px 3px 3px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 .soustitre-p {
   text-align: start;
   font-size: 0.95rem;
-  font-weight: 100;
-  padding-left: 3px;
+  font-weight: 300;
+  padding-left: 5px;
   display: flex;
 }
-
-strong {
+.soustitre-p strong {
   margin-left: auto;
 }
 
@@ -63,7 +63,6 @@ header #ohmyfood {
 /*Section localisation*/
 form {
   display: flex;
-  height: 3rem;
 }
 form .recherche {
   margin: auto;
@@ -84,6 +83,7 @@ form .recherche ::placeholder {
 .localisation {
   background-color: #eaeaea;
   box-shadow: inset 0px 4px 4px -3px rgba(53, 53, 53, 0.29);
+  height: 3rem;
 }
 
 /*Section présentation*/
@@ -193,8 +193,9 @@ form .recherche ::placeholder {
   font-weight: bold;
   transition-duration: 1s;
 }
-.fig-menu form {
-  height: 1.5rem;
+
+.btn div {
+  display: flex;
 }
 
 /*Les boutons Accueil*/
@@ -245,7 +246,7 @@ form .recherche ::placeholder {
   width: 22px;
   font-size: 0.9rem;
   font-weight: 300;
-  margin-right: 15px;
+  margin-right: 22px;
   margin-left: -15px;
   padding-top: 2.5px;
   padding-left: 7px;
@@ -269,11 +270,10 @@ form .recherche ::placeholder {
   background-color: white;
   border: none;
   border-radius: 1rem;
-  margin-bottom: 15px;
   box-shadow: 2px 2px 12px lightgrey;
-  padding: 0.8rem 1.5rem 0.8rem 0.5rem;
   width: 100%;
-  text-decoration: none;
+  padding: 0.8rem 1.5rem 0.8rem 0.5rem;
+  margin: auto;
 }
 
 /*Le bouton commander*/
@@ -332,7 +332,7 @@ form .recherche ::placeholder {
 .bloc-menu {
   display: flex;
   flex-wrap: wrap;
-  margin: auto;
+  width: 100%;
 }
 
 .menu {
@@ -350,7 +350,7 @@ form .recherche ::placeholder {
   border-bottom: 3px solid #99E2D0;
   width: 2.5rem;
   padding-bottom: 0.3rem;
-  margin: 1rem 0 0.8rem 0;
+  margin: 1rem 0 0.8rem 0.3rem;
 }
 
 .img-note2 {
@@ -362,9 +362,14 @@ form .recherche ::placeholder {
   margin-top: -9rem;
 }
 
-.menu a {
-  margin-left: auto;
-  text-decoration: none;
+.entree, .plat, .dessert {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.entree form, .plat form, .dessert form {
+  padding-bottom: 0.5rem;
+  /** padding-top: 0.5rem **/
 }
 
 /*Etiquette nouveau*/
@@ -615,8 +620,9 @@ footer .foot h3 {
   }
 
   .entree, .plat, .dessert {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    width: 100%;
   }
 
   .img-note2 {
