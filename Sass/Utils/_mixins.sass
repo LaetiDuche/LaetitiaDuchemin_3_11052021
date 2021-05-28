@@ -39,8 +39,9 @@
 @mixin titre-resto
   display: flex
   align-items: baseline
-  margin: 0 0 1.7rem 0.3rem
+  margin: 0 0 1rem 0.3rem
   & .fa-heart
+    margin-left: auto
     @include icon-coeur
 
 @mixin btn-menu
@@ -50,7 +51,7 @@
   @include box-shadow 
   width: 100%
   padding: 0.8rem 1.5rem 0.8rem 0.5rem 
-  margin: auto
+  margin-bottom: 1rem
   &:hover
     opacity: 0.9
 
@@ -75,10 +76,10 @@
   & .fa-heart
     font-size: 1.5rem
     &:hover
-      color: transparent 
+      color: transparent
+      font-weight: bold
       background: linear-gradient(to top ,$color-primary, $color-secondary)
       -webkit-background-clip: text
-      font-weight: bold
       transition-duration: 1s
 
 @mixin break-decouverte 

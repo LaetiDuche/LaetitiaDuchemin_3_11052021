@@ -14,9 +14,9 @@ h1, h2, h3, p, .fas, .far {
 }
 
 /*Typo Pages menus*/
-.titre-resto h2 {
+.titre-resto {
   font-family: "Shrikhand";
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   font-weight: 100;
   font-style: italic;
 }
@@ -57,6 +57,11 @@ header #ohmyfood {
 .fa-arrow-left {
   margin: 1.5rem 0 0 1.5rem;
   font-size: 1.2rem;
+}
+
+.header-resto {
+  background-color: #f6f6f6;
+  display: block;
 }
 
 /*Page Accueil*/
@@ -191,9 +196,9 @@ form .recherche ::placeholder {
 }
 .fig-menu .fa-heart:hover {
   color: transparent;
+  font-weight: bold;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
-  font-weight: bold;
   transition-duration: 1s;
 }
 
@@ -279,7 +284,7 @@ form .recherche ::placeholder {
   box-shadow: 2px 2px 12px lightgrey;
   width: 100%;
   padding: 0.8rem 1.5rem 0.8rem 0.5rem;
-  margin: auto;
+  margin-bottom: 1rem;
 }
 .btn:hover {
   box-shadow: 0px 7px 7px 0px rgba(53, 48, 24, 0.37);
@@ -318,9 +323,9 @@ form .recherche ::placeholder {
 }
 .btn-like .fa-heart:hover {
   color: transparent;
+  font-weight: bold;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   -webkit-background-clip: text;
-  font-weight: bold;
   transition-duration: 1s;
 }
 
@@ -335,9 +340,10 @@ form .recherche ::placeholder {
 .titre-resto {
   display: flex;
   align-items: baseline;
-  margin: 0 0 1.7rem 0.3rem;
+  margin: 0 0 1rem 0.3rem;
 }
 .titre-resto .fa-heart {
+  margin-left: auto;
   font-size: 1.5rem;
 }
 
@@ -388,6 +394,7 @@ form .recherche ::placeholder {
 
 .btn-check {
   display: none;
+  margin-left: auto;
 }
 .btn-check :hover {
   display: flex;
@@ -435,6 +442,10 @@ footer .foot h3 {
   color: white;
   font-size: 1rem;
   font-weight: 300;
+}
+footer .foot a {
+  text-decoration: none;
+  color: white;
 }
 
 /*Breakpoints Accueil*/
