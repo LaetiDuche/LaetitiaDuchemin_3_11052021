@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,97 +9,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap" rel="stylesheet">
-    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" rel="stylesheet"> 
+    <link href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>ohmyfood</title>
 </head>
+
 <body>
     <header>
-        <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-        </a>
-        <img src="Images/ohmyfood@2x.svg" id="ohmyfood" alt="logo"/>
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <img src="Images/ohmyfood@2x.svg" id="ohmyfood" alt="logo" />
     </header>
+
     <section class="carte">
         <img class="img-carte img-note" src="Images/la_note_enchantee.jpg" alt="la note enchantée">
-        <article class="menu menu2">
-            <div class="titre-resto">
-                <h2>La note enchantée</h2>
-                <form class="btn-like" method="GET"><i class="far fa-heart"></i></form>
-            </div>
-            <div class="bloc-menu">
-                <div class="entree">
-                    <h3 class="menu-title">ENTRÉES</h3>
-                    <form method="GET">
+        <div class="menu">
+            <header class="header-resto">
+                <div class="titre-resto">
+                    <h2>La note enchantée</h2>
+                    <i class="far fa-heart btn-like"></i>
+                </div>
+            </header>
+            
+            <article>
+                <div class="bloc-menu">
+                    <div class="entree">
+                        <h3 class="menu-title">ENTRÉES</h3>
                         <div class="btn">
                             <p class="titre-p">Ravioles de foie gras</p>
                             <p class="soustitre-p">Accompagnés de leur crème à la truffe<strong>25€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Caviar Osciètre</p>
                             <p class="soustitre-p">Sur blini à la farine de blé noir<strong>35€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Homard et espuma de potiron</p>
                             <p class="soustitre-p">Mariné aux zestes d'orange <strong>20€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Foie gras de canard cuit entier</p>
                             <p class="soustitre-p">Confiture de figue et pain toasté <strong>35€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                </div>
-                <div class="plat">
-                    <h3 class="menu-title">PLATS</h3>
-                    <form method="GET">
+                    </div>
+                    <div class="plat">
+                        <h3 class="menu-title">PLATS</h3>
                         <div class="btn">
                             <p class="titre-p">Noix de coquilles Saint-Jacques</p>
                             <p class="soustitre-p">Sur lit de purée de céleri-rave <strong>40€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Langoustine poêlée</p>
                             <p class="soustitre-p">Purée de patate douce <strong>35€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Mijoté de queue de boeuf</p>
                             <p class="soustitre-p">Au riz sauvage aux zestes de citron <strong>44€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                </div>
-                <div class="dessert">
-                    <h3 class="menu-title">DESSERTS</h3>
-                    <form method="GET">
+                    </div>
+                    <div class="dessert">
+                        <h3 class="menu-title">DESSERTS</h3>
                         <div class="btn">
                             <p class="titre-p">Macaron noisette et chocolat</p>
                             <p class="soustitre-p">Glace au caramel brun et sel de Guérande<strong>18€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form>
                         <div class="btn">
                             <p class="titre-p">Baba au rhum revisité</p>
                             <p class="soustitre-p">Avec son coulis de citron<strong>22€</strong></p>
+                            <input class="btn-check" type="checkbox" name="check">
                         </div>
-                    </form>
-                    <form method="GET">
                         <div class="btn">
                             <p class="titre-p">Tarte au citron meringuée</p>
                             <p class="soustitre-p">Destructuréé<strong>23€</strong></p>
-                        </div> 
-                    </form>
+                            <input class="btn-check" type="checkbox" name="check">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <button class="btn-command" onclick="">Commander</button>                 
-        </article>            
+                <button class="btn-command" onclick="">Commander</button>
+            </article>
+        </div>
     </section>
 
     <footer>
@@ -116,9 +112,10 @@
                 <h3>Mention légales</h3>
             </div>
             <div class="foot">
-                <a href=""><h3>Contact</h3></a>
+                <a href="mailto:"><h3>Contact</h3></a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
