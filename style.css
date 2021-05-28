@@ -27,6 +27,9 @@ h1, h2, h3, p, .fas, .far {
   text-align: start;
   padding-left: 5px;
   padding-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .soustitre-p {
@@ -34,6 +37,9 @@ h1, h2, h3, p, .fas, .far {
   font-size: 0.95rem;
   font-weight: 300;
   padding-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   display: flex;
 }
 .soustitre-p strong {
@@ -449,6 +455,23 @@ footer .foot a {
 }
 
 /*Breakpoints Accueil*/
+/*Mobile S*/
+@media screen and (max-width: 320px) {
+  .decouverte h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .fig-resto .img-resto {
+    height: 8rem;
+  }
+
+  .new {
+    padding: 0.2rem 0.5rem;
+    right: 0.6rem;
+    top: 0.6rem;
+  }
+}
 /*tablet*/
 @media screen and (min-width: 660px) and (max-width: 768px) {
   .decouverte a {
