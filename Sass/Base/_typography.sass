@@ -18,6 +18,7 @@ h1, h2, h3, p, .fas, .far
   white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
+  flex-direction: row
 .soustitre-p
   text-align: start
   font-size: 0.95rem
@@ -27,8 +28,10 @@ h1, h2, h3, p, .fas, .far
   overflow: hidden
   text-overflow: ellipsis
   display: flex
-  & strong
-    margin-left: auto
+strong
+  display: flex
+  margin-left: auto
+  flex-wrap: nowrap
 
 
 
