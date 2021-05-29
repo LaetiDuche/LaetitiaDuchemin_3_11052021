@@ -186,6 +186,12 @@ form .recherche ::placeholder {
   height: 11rem;
   border-radius: 15px 15px 0 0;
 }
+.fig-resto .img-note {
+  object-position: 0rem -8rem;
+}
+.fig-resto .img-franc, .fig-resto .img-delice {
+  object-position: 0rem -3rem;
+}
 
 .caption-resto {
   padding: 1rem;
@@ -377,15 +383,6 @@ form .recherche ::placeholder {
   margin: 1rem 0 0.8rem 0.3rem;
 }
 
-.img-note2 {
-  z-index: 2;
-  margin-top: -6rem;
-}
-
-.menu2 {
-  margin-top: -9rem;
-}
-
 .entree, .plat, .dessert {
   width: 100%;
   padding-bottom: 1rem;
@@ -551,6 +548,13 @@ footer .foot a {
     flex-shrink: 1;
     flex-basis: 300px;
   }
+
+  .fig-resto .img-note {
+    object-position: 0rem -15rem;
+  }
+  .fig-resto .img-franc, .fig-resto .img-delice {
+    object-position: 0rem -7rem;
+  }
 }
 /*Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -607,8 +611,8 @@ footer .foot a {
     flex-basis: 300px;
   }
 
-  .img-note {
-    object-position: bottom;
+  .fig-resto .img-franc, .fig-resto .img-delice {
+    object-position: 0rem -1rem;
   }
 }
 /*4K 1920px*/
@@ -682,16 +686,12 @@ footer .foot a {
     width: 100%;
   }
 
-  .img-note2 {
-    margin-top: -20rem;
-  }
-
   .menu2 {
     margin-top: -13rem;
   }
 }
 /*Laptop-menus*/ 
-@media screen and (min-width: 769px) and (max-width: 1920px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .img-carte {
     margin-top: -13rem;
   }
@@ -709,6 +709,7 @@ footer .foot a {
 
   .entree, .plat {
     padding-right: 2rem;
+    width: 100%;
   }
 
   .img-note2 {
@@ -724,23 +725,20 @@ footer .foot a {
   .img-carte {
     margin-top: -22rem;
   }
-
-  .bloc-menu {
-    flex-basis: auto;
-  }
-
-  .menu {
-    margin-top: -14rem;
-  }
-
-  .img-note2 {
-    margin-top: -45rem;
-  }
-
-  .menu2 {
-    margin-top: -28rem;
-  }
 }
+/**   .bloc-menu 
+ *  flex-basis: auto **/
+ * .bloc-menu 
+ *  flex-wrap: nowrap
+ *  padding-left: 2rem
+ *  padding-right: 2rem
+ *  margin: auto
+ * .menu 
+ *  margin-top: -14rem
+ * .img-note2 
+ *  margin-top: -45rem
+ * .menu2 
+ *  margin-top: -28rem */
 /*Laptop L-4K-menus*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
   .carte {

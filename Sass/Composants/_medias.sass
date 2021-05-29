@@ -13,9 +13,6 @@
     right: 0.6rem
     top: 0.6rem
   
-  
-    
-
 /*tablet*/
 @media screen and (min-width: 660px) and (max-width:768px)
   .decouverte 
@@ -68,6 +65,11 @@
     flex-grow: 1
     flex-shrink: 1
     flex-basis: 300px
+  .fig-resto
+    & .img-note
+      object-position: 0rem -15rem
+    & .img-franc, & .img-delice
+      object-position: 0rem -7rem
 
 /*Laptop L*/  
 @media screen and (min-width: 1025px) and (max-width: 1440px)
@@ -102,8 +104,9 @@
     flex-grow: 1
     flex-shrink: 1
     flex-basis: 300px
-  .img-note
-    object-position: bottom
+  .fig-resto
+    & .img-franc, & .img-delice
+      object-position: 0rem -1rem
 
 /*4K 1920px*/
 @media screen and (min-width: 1441px) and (max-width:1920px)
@@ -148,13 +151,11 @@
     margin-right: 3rem
     margin-left: 3rem
     width: 100%
-  .img-note2 
-    margin-top: -20rem
   .menu2 
     margin-top: -13rem
   
 /*Laptop-menus*/ 
-@media screen and (min-width: 769px) and ( max-width: 1920px)
+@media screen and (min-width: 769px) and ( max-width: 1024px)
   .img-carte
     margin-top: -13rem
   .menu 
@@ -166,17 +167,24 @@
     margin: auto
   .entree , .plat
     padding-right: 2rem
+    width: 100%
   .img-note2 
     margin-top: -32rem
   .menu2 
     margin-top: -26rem
+  
 
 /*Laptop-4K-menus*/
 @media screen and ( min-width: 1025px ) and ( max-width: 1920px)
   .img-carte
     margin-top: -22rem
+/**   .bloc-menu 
+    flex-basis: auto **/
   .bloc-menu 
-    flex-basis: auto
+    flex-wrap: nowrap
+    padding-left: 2rem
+    padding-right: 2rem
+    margin: auto
   .menu 
     margin-top: -14rem
   .img-note2 
