@@ -701,16 +701,20 @@ footer .foot a {
 }
 /*Laptop-menus*/ 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bloc-menu {
+    flex-wrap: nowrap;
+  }
+
+  .entree, .plat, .dessert {
+    overflow: hidden;
+  }
+
   .img-carte {
     margin-top: -13rem;
   }
 
   .menu {
     margin-top: -8rem;
-  }
-
-  .bloc-menu {
-    flex-wrap: nowrap;
   }
 
   .plat {
