@@ -59,10 +59,26 @@
   height: 4.4rem
   width: 3.5rem
   background-color: $color-tertiary
-  margin-left: auto
+  transform: translateX(0px)
+  transition: all 1000ms
   .fa-check-circle
     color: white
     font-weight: bold
     font-size: 1.3rem 
     padding: 1.6rem 1rem 1rem 1rem
+  &:hover
+    transform: translateX(100px)
+    
   
+@keyframes transit-menu
+    0%
+        transform: scaleX(0)
+    100%
+        transform: scaleX(1)
+
+.bloc-menu
+  &:active
+    & > .transit__menu
+      transform: scaleX(1)
+      animation-name: transit-menu
+      animation-duration: 1000ms
