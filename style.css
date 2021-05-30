@@ -21,35 +21,6 @@ h1, h2, h3, p, .fas, .far {
   font-style: italic;
 }
 
-.titre-p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: start;
-  padding-left: 5px;
-  padding-bottom: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex-direction: row;
-}
-
-.soustitre-p {
-  text-align: start;
-  font-size: 0.95rem;
-  font-weight: 300;
-  padding-left: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-}
-
-strong {
-  display: flex;
-  margin-left: auto;
-  flex-wrap: nowrap;
-}
-
 /*Header*/
 header {
   display: flex;
@@ -215,10 +186,6 @@ form .recherche ::placeholder {
   transition-duration: 1s;
 }
 
-.btn div {
-  display: flex;
-}
-
 /*Les boutons Accueil*/
 /*Le bouton explorer*/
 .btn-explore {
@@ -288,12 +255,12 @@ form .recherche ::placeholder {
 /*Les boutons Pages Menus*/
 /*Les boutons entree plat dessert*/
 .btn {
+  display: flex;
+  flex: 1;
   background-color: white;
   border: none;
   border-radius: 1rem;
   box-shadow: 2px 2px 12px lightgrey;
-  width: 100%;
-  padding: 0.8rem 1.5rem 0.8rem 0.5rem;
   margin-bottom: 1rem;
 }
 .btn:hover {
@@ -398,31 +365,52 @@ form .recherche ::placeholder {
   opacity: 0.8;
 }
 
-.btn-check {
+.text-btn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.titre-p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 0 0.3rem 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.soustitre-p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  padding: 0 0 0.3rem 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prix {
+  display: flex;
+  padding-top: 2.3rem;
+}
+.prix strong {
+  padding: 0 1rem;
+}
+
+.check {
   border-radius: 0 1rem 1rem 0;
   border: none;
   height: 4.4rem;
   width: 3.5rem;
   background-color: #99E2D0;
-  object-position: center;
-  margin-top: -4rem;
-  display: none;
+  margin-left: auto;
 }
-
-.btn:hover .btn-check {
-  border-radius: 0 1rem 1rem 0;
-  border: none;
-  height: 4.4rem;
-  width: 3.5rem;
-  background-color: #99E2D0;
-  object-position: center;
-  margin-top: -4rem;
-}
-
-.fa-check-circle {
+.check .fa-check-circle {
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
+  padding: 1.6rem 1rem 1rem 1rem;
 }
 
 /*Etiquette nouveau*/

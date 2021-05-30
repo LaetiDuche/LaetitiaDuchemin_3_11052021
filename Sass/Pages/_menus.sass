@@ -27,26 +27,42 @@
   &:hover
     opacity: 0.8
 
-.btn-check
+.text-btn
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap 
+  flex: 1
+.titre-p
+  font-size: 1.1rem
+  font-weight: 600
+  padding: 0.8rem 0 0.3rem 0.8rem
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+.soustitre-p
+  font-size: 0.95rem
+  font-weight: 300
+  padding: 0 0 0.3rem 0.8rem
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap 
+
+.prix
+  display: flex
+  padding-top: 2.3rem
+  strong
+    padding: 0 1rem
+
+.check
   border-radius: 0 1rem 1rem 0
   border: none
   height: 4.4rem
   width: 3.5rem
   background-color: $color-tertiary
-  object-position: center
-  margin-top: -4rem
-  display: none
-
-.btn:hover
-  .btn-check
-    border-radius: 0 1rem 1rem 0
-    border: none
-    height: 4.4rem
-    width: 3.5rem
-    background-color: $color-tertiary
-    object-position: center
-    margin-top: -4rem
-.fa-check-circle
-  color: white
-  font-weight: bold
-  font-size: 1.3rem
+  margin-left: auto
+  .fa-check-circle
+    color: white
+    font-weight: bold
+    font-size: 1.3rem 
+    padding: 1.6rem 1rem 1rem 1rem
+  
