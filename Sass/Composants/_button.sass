@@ -52,20 +52,23 @@
   .fa-check-circle
     display: none
   &:hover
+    .prix
+      animation: hover-check 0.5s
     .check
+      display: flex
       border-radius: 0 1rem 1rem 0
       border: none
       height: 4.4rem
       width: 3.5rem
-      background-color: $color-tertiary
-      animation: hover-check
+      background-color: $color-tertiary 
+      animation: hover-check 0.5s 
       .fa-check-circle
-        display: block
+        display: flex
         color: white
         font-weight: bold
         font-size: 1.3rem 
         padding: 1.6rem 1rem 1rem 1rem
-        animation: hover-icon-check 1s 
+        animation: icon-check 0.5s 
         
   
 /*Le bouton commander*/

@@ -256,34 +256,36 @@ form .recherche ::placeholder {
 /*Les boutons entree plat dessert*/
 .btn {
   display: flex;
-  flex: 1;
   background-color: white;
   border: none;
   border-radius: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
   box-shadow: 2px 2px 12px lightgrey;
   margin-bottom: 1rem;
-}
-.btn:hover {
-  opacity: 0.9;
 }
 .btn .fa-check-circle {
   display: none;
 }
+.btn:hover .prix {
+  animation: hover-check 0.5s;
+}
 .btn:hover .check {
+  display: flex;
   border-radius: 0 1rem 1rem 0;
   border: none;
   height: 4.4rem;
   width: 3.5rem;
   background-color: #99E2D0;
-  animation: hover-check;
+  animation: hover-check 0.5s;
 }
 .btn:hover .check .fa-check-circle {
-  display: block;
+  display: flex;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
   padding: 1.6rem 1rem 1rem 1rem;
-  animation: hover-icon-check 1s;
+  animation: icon-check 0.5s;
 }
 
 /*Le bouton commander*/
@@ -377,13 +379,6 @@ form .recherche ::placeholder {
   padding-bottom: 1rem;
 }
 
-.entree form, .plat form, .dessert form {
-  padding-bottom: 1rem;
-}
-.entree form:hover, .plat form:hover, .dessert form:hover {
-  opacity: 0.8;
-}
-
 .text-btn {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -410,7 +405,6 @@ form .recherche ::placeholder {
 }
 
 .prix {
-  display: flex;
   padding-top: 2.3rem;
 }
 .prix strong {
@@ -825,13 +819,13 @@ footer .foot a {
 }
 @keyframes hover-check {
   0% {
-    transform: translateX(0);
+    transform: translateX(50px);
   }
   100% {
-    transform: translateX(1);
+    transform: translateX(0px);
   }
 }
-@keyframes hover-icon-check {
+@keyframes icon-check {
   0% {
     transform: rotate(0deg);
   }
