@@ -266,6 +266,25 @@ form .recherche ::placeholder {
 .btn:hover {
   opacity: 0.9;
 }
+.btn .fa-check-circle {
+  display: none;
+}
+.btn:hover .check {
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  height: 4.4rem;
+  width: 3.5rem;
+  background-color: #99E2D0;
+  animation: hover-check;
+}
+.btn:hover .check .fa-check-circle {
+  display: block;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 1.6rem 1rem 1rem 1rem;
+  animation: hover-icon-check 1s;
+}
 
 /*Le bouton commander*/
 .btn-command {
@@ -384,7 +403,7 @@ form .recherche ::placeholder {
 .soustitre-p {
   font-size: 0.95rem;
   font-weight: 300;
-  padding: 0 0 0.3rem 0.8rem;
+  padding: 0 0 0.93rem 0.8rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -398,33 +417,6 @@ form .recherche ::placeholder {
   padding: 0 1rem;
 }
 
-.check {
-  border-radius: 0 1rem 1rem 0;
-  border: none;
-  height: 4.4rem;
-  width: 3.5rem;
-  background-color: #99E2D0;
-  transform: translateX(0px);
-  transition: all 1000ms;
-}
-.check .fa-check-circle {
-  color: white;
-  font-weight: bold;
-  font-size: 1.3rem;
-  padding: 1.6rem 1rem 1rem 1rem;
-}
-.check:hover {
-  transform: translateX(100px);
-}
-
-@keyframes transit-menu {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
 .bloc-menu:active > .transit__menu {
   transform: scaleX(1);
   animation-name: transit-menu;
@@ -829,6 +821,22 @@ footer .foot a {
   .foot-ohmy .foot {
     flex-direction: row;
     width: 50%;
+  }
+}
+@keyframes hover-check {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+@keyframes hover-icon-check {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

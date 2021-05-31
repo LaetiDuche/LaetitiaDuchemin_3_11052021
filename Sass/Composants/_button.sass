@@ -49,6 +49,24 @@
 /*Les boutons entree plat dessert*/
 .btn
   @include btn-menu
+  .fa-check-circle
+    display: none
+  &:hover
+    .check
+      border-radius: 0 1rem 1rem 0
+      border: none
+      height: 4.4rem
+      width: 3.5rem
+      background-color: $color-tertiary
+      animation: hover-check
+      .fa-check-circle
+        display: block
+        color: white
+        font-weight: bold
+        font-size: 1.3rem 
+        padding: 1.6rem 1rem 1rem 1rem
+        animation: hover-icon-check 1s 
+        
   
 /*Le bouton commander*/
 .btn-command
