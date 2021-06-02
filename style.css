@@ -31,6 +31,8 @@ h1, h2, h3, p, .fas, .far {
   z-index: 9999;
   background-repeat: no-repeat;
   animation: load-time 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 .loader .load-title {
   display: flex;
