@@ -31,8 +31,6 @@ h1, h2, h3, p, .fas, .far {
   z-index: 9999;
   background-repeat: no-repeat;
   animation: load-time 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
 }
 .loader .load-title {
   display: flex;
@@ -49,8 +47,7 @@ h1, h2, h3, p, .fas, .far {
   font-size: 2.5rem;
   color: #FF79DA;
   text-shadow: 0 0 0.3em #FF79DA;
-  animation: anim-load 1.3s reverse infinite;
-  position: relative;
+  animation: anim-load 1.3s linear infinite;
 }
 
 .load-title .o:nth-child(1) {
@@ -475,10 +472,24 @@ form .recherche ::placeholder {
   padding: 0 1rem;
 }
 
-.bloc-menu:active > .transit__menu {
-  transform: scaleX(1);
-  animation-name: transit-menu;
-  animation-duration: 1000ms;
+.entree .btn-1, .plat .btn-1, .dessert .btn-1 {
+  animation-delay: 1s;
+  animation: anim-menu 1s;
+}
+
+.entree .btn-2, .plat .btn-2, .dessert .btn-2 {
+  animation-delay: 2s;
+  animation: anim-menu 2s;
+}
+
+.entree .btn-3, .plat .btn-3, .dessert .btn-3 {
+  animation-delay: 3s;
+  animation: anim-menu 3s;
+}
+
+.entree .btn-4 {
+  animation-delay: 4s;
+  animation: anim-menu 4s;
 }
 
 /*Etiquette nouveau*/
@@ -898,11 +909,11 @@ footer .foot a {
   }
 }
 @keyframes anim-load {
-  0% {
+  from {
     color: #9356DC;
     text-shadow: 0 0 0.13em #9356DC;
   }
-  100% {
+  to {
     color: #FF79DA;
     text-shadow: 0 0 0.13em #FF79DA;
   }
@@ -911,11 +922,19 @@ footer .foot a {
   0% {
     opacity: 1;
   }
-  99% {
-    opacity: 0.9;
+  95% {
+    opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes anim-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

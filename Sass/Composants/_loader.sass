@@ -7,9 +7,7 @@
   position: fixed
   z-index: 9999
   background-repeat: no-repeat
-  animation: load-time 3s
-  animation-iteration-count: 1
-  animation-fill-mode: backwards 
+  animation: load-time 3s 
   .load-title
     display: flex
     position: absolute
@@ -24,8 +22,8 @@
       font-size: 2.5rem
       color: #FF79DA
       text-shadow: 0 0 0.3em #FF79DA 
-      animation: anim-load 1.3s reverse  infinite
-      position: relative
+      animation: anim-load 1.3s linear  infinite
+      
     
 .load-title .o:nth-child(1)
   animation-delay: 0s

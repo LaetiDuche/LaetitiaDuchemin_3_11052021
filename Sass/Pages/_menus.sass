@@ -52,11 +52,16 @@
 
 
 
-
-
-.bloc-menu
-  &:active
-    & > .transit__menu
-      transform: scaleX(1)
-      animation-name: transit-menu
-      animation-duration: 1000ms
+.entree .btn-1, .plat .btn-1, .dessert .btn-1
+  animation-delay: 1s 
+  animation: anim-menu 1s
+.entree .btn-2, .plat .btn-2, .dessert .btn-2
+  animation-delay: 2s 
+  animation: anim-menu 2s
+.entree .btn-3, .plat .btn-3, .dessert .btn-3
+  animation-delay: 3s 
+  animation: anim-menu 3s
+.entree .btn-4
+  animation-delay: 4s 
+  animation: anim-menu 4s
+  
