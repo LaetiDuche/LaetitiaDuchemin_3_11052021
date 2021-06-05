@@ -21,6 +21,7 @@ h1, h2, h3, p, .fas, .far {
   font-style: italic;
 }
 
+/*Loader*/
 .loader {
   background-color: #353535;
   top: 0px;
@@ -28,8 +29,7 @@ h1, h2, h3, p, .fas, .far {
   height: 100%;
   width: 100%;
   position: fixed;
-  transition-property: z-index 2;
-  animation: load-time 3s;
+  animation: load-time 10s;
 }
 .loader .load-title {
   display: flex;
@@ -81,11 +81,12 @@ h1, h2, h3, p, .fas, .far {
   animation-delay: 0.7s;
 }
 
+/*Accueil*/
 /*Header*/
 header {
   display: flex;
   align-items: baseline;
-  transition-property: z-index 1;
+  z-index: 1;
   position: relative;
   background-color: white;
 }
@@ -105,7 +106,6 @@ header #ohmyfood {
   display: block;
 }
 
-/*Page Accueil*/
 /*Section localisation*/
 form {
   display: flex;
@@ -127,7 +127,7 @@ form .recherche ::placeholder {
 }
 
 .accueil {
-  transition-property: z-index 1;
+  z-index: 1;
   position: relative;
 }
 
@@ -241,13 +241,13 @@ form .recherche ::placeholder {
   border: none;
   background-color: transparent;
 }
-.fig-menu .fa-heart {
+.fig-menu.fa-heart {
   font-size: 1.5rem;
 }
-.fig-menu .fa-heart:hover {
+.fig-menu.fa-heart:hover {
   color: transparent;
   font-weight: bold;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   transition-duration: 1s;
 }
@@ -379,13 +379,13 @@ form .recherche ::placeholder {
   border: none;
   background-color: transparent;
 }
-.btn-like .fa-heart {
+.btn-like.fa-heart {
   font-size: 1.5rem;
 }
-.btn-like .fa-heart:hover {
+.btn-like.fa-heart:hover {
   color: transparent;
   font-weight: bold;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   transition-duration: 1s;
 }
@@ -407,19 +407,19 @@ form .recherche ::placeholder {
   align-items: baseline;
   margin: 0 0 1rem 0.3rem;
 }
-.titre-resto .fa-heart {
+.titre-resto.fa-heart {
   margin-left: auto;
   margin: 0 0 0 auto;
   border: none;
   background-color: transparent;
 }
-.titre-resto .fa-heart .fa-heart {
+.titre-resto.fa-heart.fa-heart {
   font-size: 1.5rem;
 }
-.titre-resto .fa-heart .fa-heart:hover {
+.titre-resto.fa-heart.fa-heart:hover {
   color: transparent;
   font-weight: bold;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   transition-duration: 1s;
 }

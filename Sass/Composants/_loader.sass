@@ -1,3 +1,4 @@
+/*Loader*/
 .loader
   background-color: $color-footer
   top: 0px
@@ -5,8 +6,7 @@
   height: 100%
   width: 100%
   position: fixed
-  transition-property: z-index 2
-  animation: load-time 3s 
+  animation: load-time 10s 
   .load-title
     display: flex
     position: absolute
@@ -23,7 +23,6 @@
       text-shadow: 0 0 0.3em #FF79DA 
       animation: anim-load 1.3s linear  infinite
       
-    
 .load-title .o:nth-child(1)
   animation-delay: 0s
 .load-title .h:nth-child(2)
