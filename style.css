@@ -28,8 +28,7 @@ h1, h2, h3, p, .fas, .far {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 9999;
-  background-repeat: no-repeat;
+  transition-property: z-index 2;
   animation: load-time 3s;
 }
 .loader .load-title {
@@ -86,7 +85,7 @@ h1, h2, h3, p, .fas, .far {
 header {
   display: flex;
   align-items: baseline;
-  z-index: 1;
+  transition-property: z-index 1;
   position: relative;
   background-color: white;
 }
@@ -127,6 +126,11 @@ form .recherche ::placeholder {
   opacity: 0.6;
 }
 
+.accueil {
+  transition-property: z-index 1;
+  position: relative;
+}
+
 .localisation {
   background-color: #eaeaea;
   box-shadow: inset 0px 4px 4px -3px rgba(53, 53, 53, 0.29);
@@ -165,6 +169,7 @@ form .recherche ::placeholder {
 /*fonctionnement*/
 .fonction {
   padding: 0 20px 50px 30px;
+  background-color: white;
 }
 .fonction h2 {
   padding: 50px 0px 25px 0;
@@ -940,13 +945,10 @@ footer .foot a {
 }
 @keyframes load-time {
   0% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
+    z-index: 2;
   }
   100% {
-    opacity: 0;
+    z-index: 1;
   }
 }
 @keyframes anim-menu {
