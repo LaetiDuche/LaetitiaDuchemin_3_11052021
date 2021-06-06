@@ -21,6 +21,20 @@ h1, h2, h3, p, .fas, .far {
   font-style: italic;
 }
 
+.fa-heart {
+  margin: 0 0 0 auto;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.fa-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background: linear-gradient(#9356DC, #FF79DA);
+  animation: btn-like 2s;
+  -webkit-background-clip: text;
+}
+
 /*Loader*/
 .loader {
   background-color: #353535;
@@ -237,19 +251,6 @@ form .recherche ::placeholder {
 
 .fig-menu {
   display: flex;
-  margin: 0 0 0 auto;
-  border: none;
-  background-color: transparent;
-}
-.fig-menu.fa-heart {
-  font-size: 1.5rem;
-}
-.fig-menu.fa-heart:hover {
-  color: transparent;
-  font-weight: bold;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  transition-duration: 1s;
 }
 
 /*Les boutons Accueil*/
@@ -374,22 +375,6 @@ form .recherche ::placeholder {
 }
 
 /*Les boutons j'aime-coeur*/
-.btn-like {
-  margin: 0 0 0 auto;
-  border: none;
-  background-color: transparent;
-}
-.btn-like.fa-heart {
-  font-size: 1.5rem;
-}
-.btn-like.fa-heart:hover {
-  color: transparent;
-  font-weight: bold;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  transition-duration: 1s;
-}
-
 /*Pages Menus*/
 .img-carte {
   display: flex;
@@ -409,19 +394,6 @@ form .recherche ::placeholder {
 }
 .titre-resto.fa-heart {
   margin-left: auto;
-  margin: 0 0 0 auto;
-  border: none;
-  background-color: transparent;
-}
-.titre-resto.fa-heart.fa-heart {
-  font-size: 1.5rem;
-}
-.titre-resto.fa-heart.fa-heart:hover {
-  color: transparent;
-  font-weight: bold;
-  background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  transition-duration: 1s;
 }
 
 .bloc-menu {
@@ -915,6 +887,18 @@ footer .foot a {
   .foot-ohmy .foot {
     flex-direction: row;
     width: 50%;
+  }
+}
+@keyframes btn-like {
+  from {
+    color: #9356DC;
+    transition-duration: 3s;
+    opacity: 0.4;
+  }
+  to {
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    opacity: 1;
   }
 }
 @keyframes hover-check {
