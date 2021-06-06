@@ -1,25 +1,6 @@
-@keyframes btn-like
-  from
-    color: #9356DC
-    transition-duration: 3s
-    opacity: 0.4
-  to
-    background: linear-gradient($color-primary, $color-secondary)
-    -webkit-background-clip: text
-    opacity: 1
-    
-@keyframes hover-check
-  0%
-    transform: translateX(50px) 
-  100%
-    transform: translateX(-0px)  
-     
-@keyframes icon-check
-  0% 
-    transform: rotate(0deg) 
-  100% 
-    transform: rotate(360deg) 
-        
+/*Les keyframes*/
+
+/*Le loader*/
 @keyframes anim-load
   from
     color: #9356DC
@@ -33,7 +14,32 @@
     z-index: 2 
   100% 
     z-index: 1 
+
+/*Le bouton favori*/
+@keyframes btn-like
+  from
+    color: #9356DC
+    transition-duration: 3s
+    opacity: 0.4
+  to
+    background: linear-gradient($color-primary, $color-secondary)
+    -webkit-background-clip: text
+    opacity: 1
     
+/*Le bouton check dans les menus*/
+@keyframes hover-check
+  0%
+    transform: translateX(50px) 
+  100%
+    transform: translateX(-0px)  
+     
+@keyframes icon-check
+  0% 
+    transform: rotate(0deg) 
+  100% 
+    transform: rotate(360deg) 
+        
+/*Deroulement des plats des menus*/
 @keyframes anim-menu
   0%
     opacity: 0
