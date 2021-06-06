@@ -21,20 +21,6 @@ h1, h2, h3, p, .fas, .far {
   font-style: italic;
 }
 
-.fa-heart {
-  margin: 0 0 0 auto;
-  border: none;
-  background-color: transparent;
-  font-size: 1.5rem;
-}
-.fa-heart:hover {
-  color: transparent;
-  font-weight: bold;
-  background: linear-gradient(#9356DC, #FF79DA);
-  animation: btn-like 2s;
-  -webkit-background-clip: text;
-}
-
 /*Loader*/
 .loader {
   background-color: #353535;
@@ -252,6 +238,19 @@ form .recherche ::placeholder {
 .fig-menu {
   display: flex;
 }
+.fig-menu .fa-heart {
+  margin: 0 0 0 auto;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.fig-menu .fa-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background: linear-gradient(#9356DC, #FF79DA);
+  animation: btn-like 2s;
+  -webkit-background-clip: text;
+}
 
 /*Les boutons Accueil*/
 /*Le bouton explorer*/
@@ -375,6 +374,20 @@ form .recherche ::placeholder {
 }
 
 /*Le bouton favori*/
+.fa-heart .fa-heart {
+  margin: 0 0 0 auto;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.fa-heart .fa-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background: linear-gradient(#9356DC, #FF79DA);
+  animation: btn-like 2s;
+  -webkit-background-clip: text;
+}
+
 /*Pages Menus*/
 .img-carte {
   display: flex;
@@ -392,8 +405,18 @@ form .recherche ::placeholder {
   align-items: baseline;
   margin: 0 0 1rem 0.3rem;
 }
-.titre-resto.fa-heart {
-  margin-left: auto;
+.titre-resto .fa-heart {
+  margin: 0 0 0 auto;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+.titre-resto .fa-heart:hover {
+  color: transparent;
+  font-weight: bold;
+  background: linear-gradient(#9356DC, #FF79DA);
+  animation: btn-like 2s;
+  -webkit-background-clip: text;
 }
 
 .bloc-menu {

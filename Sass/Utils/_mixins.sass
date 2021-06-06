@@ -35,9 +35,7 @@
   display: flex
   align-items: baseline
   margin: 0 0 1rem 0.3rem
-  &.fa-heart
-    margin-left: auto
-    @include btn-like
+  @include btn-like
 
 @mixin btn-menu
   display: flex
@@ -64,17 +62,17 @@
   display: flex
 
 @mixin btn-like
-.fa-heart
-  margin: 0 0 0 auto
-  border: none
-  background-color: transparent
-  font-size: 1.5rem
-  &:hover
-    color: transparent
-    font-weight: bold
-    background: linear-gradient($color-primary, $color-secondary)
-    animation: btn-like 2s 
-    -webkit-background-clip: text
+  .fa-heart
+    margin: 0 0 0 auto
+    border: none
+    background-color: transparent
+    font-size: 1.5rem
+    &:hover
+      color: transparent
+      font-weight: bold
+      background: linear-gradient($color-primary, $color-secondary)
+      animation: btn-like 2s 
+      -webkit-background-clip: text
     
 @mixin break-decouverte
   .decouverte
