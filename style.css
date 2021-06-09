@@ -46,7 +46,7 @@ h1, h2, h3, p, .fas, .far {
   font-size: 2.5rem;
   color: #FF79DA;
   text-shadow: 0 0 0.3em #FF79DA;
-  animation: anim-load 1.3s linear infinite;
+  animation: anim-load 1.3s reverse infinite;
 }
 
 .load-title .o:nth-child(1) {
