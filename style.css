@@ -227,8 +227,8 @@ form .recherche ::placeholder {
 .fig-resto .img-note {
   object-position: 0rem -8rem;
 }
-.fig-resto .img-franc, .fig-resto .img-delice {
-  object-position: 0rem -3rem;
+.fig-resto .img-delice {
+  object-position: 0rem -2rem;
 }
 
 .caption-resto {
@@ -309,7 +309,6 @@ form .recherche ::placeholder {
   font-size: 1.3rem;
   opacity: 0.5;
   color: black;
-  margin-right: 1rem;
 }
 .btn-fonction .titre-fonction {
   color: black;
@@ -657,7 +656,7 @@ footer .foot a {
     object-position: 0rem -15rem;
   }
   .fig-resto .img-franc, .fig-resto .img-delice {
-    object-position: 0rem -7rem;
+    object-position: 0rem -6rem;
   }
 }
 /*Laptop L*/  
@@ -713,10 +712,6 @@ footer .foot a {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 300px;
-  }
-
-  .fig-resto .img-franc, .fig-resto .img-delice {
-    object-position: 0rem -1rem;
   }
 }
 /*4K 1920px*/
