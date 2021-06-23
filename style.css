@@ -336,7 +336,7 @@ form .recherche ::placeholder {
   display: flex;
   border-radius: 0 1rem 1rem 0;
   border: none;
-  height: 4.4rem;
+  height: 4.5rem;
   width: 3.5rem;
   background-color: #99E2D0;
   animation: hover-check 0.5s;
