@@ -1,4 +1,3 @@
-# LaetitiaDuchemin_3_11052021
 Projet Ohmyfood
 
 Site web de commande de repas en ligne.
